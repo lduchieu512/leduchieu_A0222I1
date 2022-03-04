@@ -1,0 +1,11 @@
+Begin 
+	Input N
+	Input a1,a2,a4,...an	
+	Max =a1
+	i=2
+	While i<=n
+	  Do max <ai
+	End if
+	  i =i+1
+	Display max 
+End

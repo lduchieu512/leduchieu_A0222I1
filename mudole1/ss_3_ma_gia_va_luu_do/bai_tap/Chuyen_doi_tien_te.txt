@@ -1,0 +1,8 @@
+Begin 
+	Input N
+		M=N*23000
+	Display M
+End
+
+ex: N là tiền $ muốn đổi sang tiền VND
+    M là tiền VND đã đc đổi từ tiền $
