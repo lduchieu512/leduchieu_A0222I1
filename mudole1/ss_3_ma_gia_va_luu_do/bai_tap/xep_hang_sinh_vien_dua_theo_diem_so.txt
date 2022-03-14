@@ -1,0 +1,13 @@
+begin
+ input x
+ if x >= 75
+  display loai A
+ else 60 <= x < 75
+   display loai B
+ else 45 <= x < 60
+   display loai C
+ else 35 <= x < 45
+   display loai D
+ else x < 35
+   display E
+End

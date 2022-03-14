@@ -5,6 +5,7 @@ Begin
 	i=2
 	While i<=n
 	  Do max <ai
+	  Max=ai
 	End if
 	  i =i+1
 	Display max 
