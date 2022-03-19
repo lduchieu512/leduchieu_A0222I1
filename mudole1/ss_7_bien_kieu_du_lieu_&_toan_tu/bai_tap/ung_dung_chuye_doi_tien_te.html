@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th> From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="vao"></td>
+            <td> <select id="from1" style="height:100%;width: 100%">
+                <option value="a">Vietnam</option>
+                <option value="b">USA</option>
+                <option value="c">China</option>
+            </select></td>
+            <td><select id="from2" style=" height:100% ;width: 100%">
+                <option value="a">VNĐ</option>
+                <option value="b">USD</option>
+                <option value="c">CNY</option>
+            </select></td>
+            <td><button style="background: #006699; color: white" type="button" onclick="lamviec()">Convert </button></td>
+        </tr>
+    </table>
+
+    <script>
+    function lamviec() {
+        let inputValue = document.getElementById('vao').value;
+        let from1 = document.getElementById('from1').value;
+        let from2 = document.getElementById('from2').value;
+        if (from1==from2){
+            // document.write('Result :' + inputValue)
+            alert(inputValue);
+        }
+        if (from1 == 'a' && from2 == 'b'){
+            // document.write('Result :' + inputValue / 23000)
+            alert(inputValue / 23000);
+        }if (from1 == 'a' && from2 == 'c'){
+            // document.write('Result :' + inputValue / 3559.45)
+            alert(inputValue / 3559.45);
+        }if (from1 == 'b' && from2 == 'a'){
+            //document.write('Result :' + inputValue * 23000)
+            alert(inputValue * 23000);
+
+        }if (from1 == 'b' && from2 == 'c'){
+            //document.write('Result :' + inputValue * 6.35)
+            alert(inputValue * 6.35);
+
+        }if (from1 == 'c' && from2 == 'a'){
+            //document.write('Result :' + inputValue * 3559.45)
+            alert(inputValue * 3559.45);
+
+        }if (from1 == 'c' && from2 == 'b'){
+            //document.write('Result :' + inputValue / 6.35)
+            alert(inputValue / 6.35);
+
+        }
+    }
+    </script>
+
+</body>
+</html>
