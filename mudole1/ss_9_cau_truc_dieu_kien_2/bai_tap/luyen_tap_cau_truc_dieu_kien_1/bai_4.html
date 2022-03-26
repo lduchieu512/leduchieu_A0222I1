@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó-->
+<script>
+    a = prompt("Nhập giá trị thứ nhất ")
+    b = prompt("Nhập giá trị thứ hai ")
+    c = prompt("Nhập giá trị thứ ba ")
+    if (a>b && a>c){
+        alert("Số " +a+ " lớn nhất trong 3 số ("+a+", " +b+","+c+")" )
+    }else if (b>a && b >c){
+        alert("Số " +b+ " lớn nhất trong 3 số ("+a+", " +b+","+c+")" )
+    }else if (c>a &&  b<c){
+        alert("Số " +c+ " lớn nhất trong 3 số ("+a+", " +b+","+c+")")
+    }else {
+        alert("3 số (" +a+", " +b+","+c+") đều bằng nhau ")
+    }
+</script>
+
+</body>
+</html>

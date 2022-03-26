@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Nếu doanh thu <= 10tr thì 5%-->
+<!--Nếu doanh thu <= 50tr thì 10%-->
+<!--Nếu doanh thu <= 100tr thì 15%-->
+<script>
+    let a = parseFloat(prompt('Doanh thu cuối tháng (đơn vị VNĐ'));
+    if (a <= 10000000 ){
+        let b = a * (5/100);
+        alert('Tiền hoa hồng của 1 tháng là: '+ b)
+    }else if (a <= 50000000 ) {
+        let b = a * (10 / 100);
+        alert('Tiền hoa hồng của 1 tháng là: ' + b )
+    }else if (a <= 100000000 ) {
+        let b = a * (15 / 100);
+        alert('Tiền hoa hồng của 1 tháng là: ' + b )
+    }
+</script>
+</body>
+</html>

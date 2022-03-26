@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        input{
+            font-size: xx-large;
+            background: white;
+        }
+    </style>
+
+</head>
+<body>
+<form name="from1">
+<table style="width: 350px;height: 350px" border="0">
+    <tr>
+        <td colspan="4"><input id="calc" name="answer" style="height: 99%; width: 99%" type="text"></td>
+    </tr>
+    <tr>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '1'" value="1"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '2'" value="2"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '3'" value="3"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '+'" value="+"></td>
+    </tr>
+    <tr>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '4'" value="4"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '5'" value="5"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '6'" value="6"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '-'" value="-"></td>
+    </tr>
+    <tr>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '7'" value="7"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '8'" value="8"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '9'" value="9"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '*'" value="*"></td>
+    </tr>
+    <tr>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value = ''" value="C"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '0'" value="0"></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value = eval(from1.answer.value)" value="="></td>
+        <td><input style="height: 100%; width: 100%" type="button" onclick="from1.answer.value += '/'" value="/"></td>
+
+    </tr>
+</table>
+</form>
+</body>
+</html>

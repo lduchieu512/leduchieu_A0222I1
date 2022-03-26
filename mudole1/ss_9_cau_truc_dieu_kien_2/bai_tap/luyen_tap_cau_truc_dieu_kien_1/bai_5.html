@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ-->
+<script>
+    let a = parseFloat(prompt("Điểm bài kiểm tra "))
+    let b = parseFloat(prompt("Điểm thi giữa kỳ "))
+    let c = parseFloat(prompt("Điểm thi cuối kỳ "))
+   let  area = (a + b * 2 + c*3)/6;
+    console.log(area)
+    if (area >5){
+        if (area >6.5){
+            if (area >8.5){
+                alert('Học lực giỏi')
+            }else {
+                alert('Học lực khá ')
+            }
+        }else {
+            alert('Học lực trung bình ')
+        }
+    }else {
+        alert('Học lực kém')
+    }
+</script>
+</body>
+</html>

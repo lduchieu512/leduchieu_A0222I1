@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Dạng toán ax2+bx+c=0. Nhập ax2'))
+    let b = parseInt(prompt('Dạng toán ax2+bx+c=0.Nhập bx'))
+    let c = parseInt(prompt('Dạng toán ax2+bx+c=0.Nhập c'))
+    if (a ==0){
+        if (b==0){
+            if (c==0){
+                alert('Phương trình vô số nghiệm')
+            }else {
+                alert('Phương trình vô nghiệm')
+            }
+        }else {
+            x = -c / b;
+            alert('Phương trình 1 nghiệm là ' + x)
+        }
+    }else {
+
+        let d = b * b - 4 * a * c;
+        if (d == 0) {
+            let x1 = -b / (2 * a);
+            alert('Phương trình 1 nghiệm là ' + x1)
+        } else if (d > 0) {
+            let x2 = ((-b) + Math.sqrt(d)) / (2 * a);
+            let x3 = ((-b) - Math.sqrt(d)) / (2 * a);
+            alert('Phương trình 2 nghiệm là ' + x2 + ' và ' + x3)
+        } else {
+            alert('Phương trình vô nghiệm')
+        }
+    }
+</script>
+</body>
+</html>

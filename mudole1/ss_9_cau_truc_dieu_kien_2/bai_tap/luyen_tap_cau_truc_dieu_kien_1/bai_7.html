@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Tính cước điện thoại cho một hộ gia đình với các thông số đã cho-->
+
+<script>
+let a = parseFloat(prompt('Số phút đã sử dụng: '))
+    if (a>200){
+        let area = ((a-200)*200+150*400+50*600);
+        let phi = area +25000
+        alert(phi+"VNĐ cho "+a+" phút")
+    }else if(a>50){
+        let area =((a-50)*400+50*600)
+        let phi = area +25000
+        alert(phi+"VNĐ cho "+a+" phút")
+    }else {
+        let area = a*600
+        let phi = area +25000
+        alert(phi+"VNĐ cho "+a+" phút")
+    }
+</script>
+</body>
+</html>

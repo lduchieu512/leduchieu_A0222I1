@@ -1,8 +1,44 @@
 <html>
 <head>
-
+<title></title>
 </head>
 <body>
-<script
+<input id="so1" type="text"><input id="so2" type="text"><br>
+<button onclick="cong()">Addtion(+)</button>
+<button onclick="tru()">Subtraction(-) </button>
+<button onclick="nhan()">Multiplication(X)</button>
+<button onclick="chia()">Division(/)</button>
+<p>Result: <span id="kq"></span> </p>
+<script>
+function cong() {
+    let a = document.getElementById('so1').value;
+    let b = document.getElementById('so2').value;
+    let c = parseInt(a);
+    let d = parseInt(b);
+    document.getElementById("kq").innerHTML = c + d;
+}
+function tru() {
+    let a = document.getElementById('so1').value;
+    let b = document.getElementById('so2').value;
+    let c = parseInt(a);
+    let d = parseInt(b);
+    document.getElementById("kq").innerHTML = c-d;
+}
+function nhan() {
+    let a = document.getElementById('so1').value;
+    let b = document.getElementById('so2').value;
+    let c = parseInt(a);
+    let d = parseInt(b);
+    document.getElementById("kq").innerHTML = c * d;
+}
+function chia() {
+    let a = document.getElementById('so1').value;
+    let b = document.getElementById('so2').value;
+    let c = parseInt(a);
+    let d = parseInt(b);
+    document.getElementById("kq").innerHTML = c /d;
+}
+
+</script>
 </body>
 </html>
