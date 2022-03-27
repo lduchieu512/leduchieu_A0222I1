@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+let sochu = Number(prompt("Số chữ điện mà bạn đang dùng: "));
+let sotien = 0;
+if (sochu <= 50){
+sotien = 1400 * sochu;
+}else if ( sochu <= 100){
+sotien = (50*1484) + ((sochu-50)*1533);
+}else if ( sochu <= 200){
+sotien = (50*1484) + (50*1533) + ((sochu-100)*1786);
+}else {
+sotien = (50*1484) + (50*1533) + (100*1786) + ((sochu - 200)*2242);
+}
+document.write("Số điện nhà bạn hiện tại là "+sochu);
+document.write("<br>Số tiền điện là "+sotien+" VNĐ");
+</script>
 </body>
 </html>

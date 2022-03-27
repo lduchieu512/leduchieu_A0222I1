@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><input type="button" value="bài 1" onclick="bai1()"> Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành</p>
+<p><input type="button" value="Bài 2" onclick="bai2()">: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.</p>
+<p><input type="button" value="Bài 3" onclick="bai3()">Hiển thị ra 20 số trong dãy fibonacci đầu tiên.</p>
+<p><input type="button" value="Bài 4" onclick="bai4()"> Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.</p>
+<p><input type="button" value="Bài 5" onclick="bai5()">Tính tổng của 20 số đầu tiên trong dãy fibonacci. </p>
+<p><input type="button" value="Bài 6" onclick="bai6()">Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.</p>
+<p><input type="button" value="Bài 7" onclick="bai7()"> Hãy viết một chương trình in ra các số từ 1 đến 100. Nhưng nếu số chia hết cho 3 thì in ra "Fizz", 5 thì in ra "Buzz" thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".</p>
+
+
+
+
+<script>
+    function bai1() {
+        for (i=1;i<100;i++){
+        if (i<99){
+            document.write(i+"</br>");
+        }else {
+            document.write("Đã hoàn thành")
+        }
+        }
+    }
+    function bai2() {
+
+        let nhietDo = Number (parseInt(prompt("Nhập nhiệt độ căn phòng")));
+        while (nhietDo<20 || nhietDo>40){
+            if (nhietDo<20){
+                alert("Nhiệt độ quá thấp");
+                nhietDo = Number(parseInt(prompt("NHập nhiệt độ ")))
+            }else if (nhietDo>40){
+                alert("Nhiệt độ quá cao");
+                nhietDo= Number(parseInt(prompt("Nhập nhiệt độ ")))
+            }
+        } alert("Nhiệt độ bình thường")
+
+    }
+function bai3() {
+    let  f = 0,f0= 0,f1 = 0;
+    let fibonacci = " ";
+    for (let i=0; i<20;i++) {
+        if (i == 0) {
+            f = 1;
+            f1 = 1;
+            fibonacci += f + "   "
+        } else {
+            f = f0 + f1;
+            f0 = f1;
+            f1 = f;
+            fibonacci += f + "   "
+            console.log(i + " = " + f);
+        }
+    }
+    document.write(fibonacci)
+}
+function bai4() {
+    let  f = 0,f0= 0,f1 = 0;
+    let chia5 = "";
+    let fibonacci = " ";
+    for (let i=0; i<20;i++) {
+        if (i == 0) {
+            f = 1;
+            f1 = 1;
+            fibonacci += f + "   "
+        } else {
+            f = f0 + f1;
+            f0 = f1;
+            f1 = f;
+            fibonacci += f + "   "
+            console.log(i + " = " + f);
+            if (f%5==0){
+                chia5=f;
+                break
+            }
+        }
+    }
+    document.write("Sô chia hết cho 5 trong dãy là "+chia5)
+
+}
+function bai5() {
+    let  f = 0,f0= 0,f1 = 0,tong=0;
+    let fibonacci = " ";
+    for (let i=0; i<20;i++) {
+        if (i == 0) {
+            f = 1;
+            f1 = 1;
+            fibonacci += f + "   "
+            tong +=f
+        } else {
+            f = f0 + f1;
+            f0 = f1;
+            f1 = f;
+            fibonacci += f + "   "
+            console.log(i + " = " + f);
+            tong +=f
+        }
+    }
+    document.write("Dãy Fibonacci là "+fibonacci+"<br>")
+    document.write("Tổng của các số = "+tong)
+}
+function bai6() {
+    let count=0,tong=0;
+    let dayso="" ;
+    for (let i=1; ;i++){
+        if( i%7==0){
+            dayso+= i+"  ";
+            console.log(dayso);
+            tong+=i;
+            count++;
+            if(count==30)
+                break
+        }
+    }
+    document.write(dayso+"<br>");
+    document.write("Tổng bằng:" +tong);
+}
+function bai7() {
+    for ( let i=1;i<=100;i++){
+        if(i%3==0 && i%5==0 ){
+            document.write(i+"FizzBuzz <br>");
+        }else {
+            if (i%3==0){
+                document.write(i+"Fizz<br>");
+            }else if (i%5==0){
+                document.write(i+"Buzz<br> ");
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>

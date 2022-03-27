@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><input type="button" value="Bài 1" onclick="bai1()"> In dãy Finonaci</p>
+<p><input type="button" value="Bài 2" onclick="bai2()"> Tính giai thừa của một số nguyên dương</p>
+<p><input type="button" value="Bài 3" onclick="bai3()"> In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau</p>
+<p><input type="button" value="Bài 4" onclick="bai4()"> In hình chữ nhật</p>
+<p><input type="button" value="Bài 5" onclick="bai5()"> Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.</p>
+<p><input type="button" value="Bài 6" onclick="bai6()"> In hình trái tim</p>
+
+
+
+<script>
+function bai1() {
+    let  f = 0,f0= 0,f1 = 0;
+    let fibonacci = " ";
+    for (let i=0; i<50;i++) {
+        if (i == 0) {
+            f = 1;
+            f1 = 1;
+            fibonacci += f + "  <br>"
+        } else {
+            f = f0 + f1;
+            f0 = f1;
+            f1 = f;
+            fibonacci += f + "  <br>"
+            console.log(i + " = " + f);
+        }
+    }
+    document.write(fibonacci)
+}
+function bai2() {
+    let so = Number(prompt("nhập giai thừa: "));
+    let giai_thua =1;
+    if ( so == 0|| so ==1){
+        giai_thua = 1;
+        document.write("giai thừa của "+so+"="+giai_thua)
+    }else if (so<0){
+        alert("Error!")
+    }else {
+        for (i=1;i<=so;i++){
+
+            giai_thua = giai_thua*i;
+        }
+        document.write("giai thừa của "+so+"="+giai_thua)
+    }
+}
+function bai3() {
+    let stars = Number(prompt("Bạn thích nhiêu sao: "));
+    for (let i=0;i<stars;i++){
+        for (let j=0;j<=i;j++){
+            let sao = "*";
+            document.write(sao);
+        }
+        document.write("<br>")
+
+    }
+    document.write("<br><br>")
+    for (let i=stars;i>0;i--){
+        for (let j=0;j<i;j++){
+            let sao = "*";
+            document.write(sao);
+        }
+        document.write("<br>")
+
+    }
+    document.write("<br><br>")
+
+    for (let i=0;i<stars;i++){
+        for (let j=0;j<=i;j++){
+            let sao = "*";
+            document.write(sao);
+        }
+        document.write("<br>")
+
+    }
+    document.write("<br><br>")
+    document.write("<div style='width: 100px' align='right' >")
+
+    for (let i=stars;i>0;i--){
+        for (let j=0;j<i;j++){
+            let sao = "*";
+            document.write(sao);
+        }
+        document.write("<br>")
+
+    }
+
+    document.write("</div>")
+}
+</script>
+</body>
+</html>
