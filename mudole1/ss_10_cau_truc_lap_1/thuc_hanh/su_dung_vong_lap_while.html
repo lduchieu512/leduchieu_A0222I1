@@ -6,17 +6,26 @@
 </head>
 <body>
 <p><input type="button" value="Bài 1:" onclick="bai1()"> Viết chương trình nhận vào một số từ hộp thoại, việc nhập kết thúc khi người dùng nhập vào giá trị -1. Mỗi giá trị nhập được sẽ được hiển thị ra và thực hiện tính tổng các giá trị đó. </p>
+<p >Giá trị nhập được: <span id="bai1"></span> </p>
+<p>Tổng :<span id="total"></span></p>
 <p><input type="button" value="Bài 2:" onclick="bai2()">Viết chương hình hiển thị thẻ hr theo độ rộng từ 1 đến 100. Kết quả sẽ được hiển thị như hình</p>
+
 <script>
     function bai1() {
-        let num = parseInt(prompt('Enter a number: '))
+        let s ="";
+        let num =0;
         let total = 0;
         while (num != -1) {
-            num = parseInt(prompt('Enter a number '))
-            alert(num);
             total = total +num;
+            num = parseInt(prompt('Enter a number '))
+            s +=num;
+
+             document.getElementById('bai1').innerHTML = s + "&nbsp";
+            // document.write(num)
         }
-        alert(total);
+
+        document.getElementById('total').innerHTML = total;
+        // alert(total)
     }
     function bai2() {
         let i= 0

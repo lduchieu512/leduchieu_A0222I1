@@ -12,7 +12,7 @@
 <p><input type="button" value="Bài 5" onclick="bai5()">Tính tổng của 20 số đầu tiên trong dãy fibonacci. </p>
 <p><input type="button" value="Bài 6" onclick="bai6()">Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.</p>
 <p><input type="button" value="Bài 7" onclick="bai7()"> Hãy viết một chương trình in ra các số từ 1 đến 100. Nhưng nếu số chia hết cho 3 thì in ra "Fizz", 5 thì in ra "Buzz" thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".</p>
-
+<p><input type="button" value="Bài 8" onclick="bai8()">Game đoán số</p>
 
 
 
@@ -28,109 +28,220 @@
     }
     function bai2() {
 
-        let nhietDo = Number (parseInt(prompt("Nhập nhiệt độ căn phòng")));
-        while (nhietDo<20 || nhietDo>40){
-            if (nhietDo<20){
-                alert("Nhiệt độ quá thấp");
-                nhietDo = Number(parseInt(prompt("NHập nhiệt độ ")))
-            }else if (nhietDo>40){
-                alert("Nhiệt độ quá cao");
-                nhietDo= Number(parseInt(prompt("Nhập nhiệt độ ")))
+        // let nhietDo = Number (parseInt(prompt("Nhập nhiệt độ ")));
+        // while (nhietDo<20 || nhietDo>100){
+        //     if (nhietDo<20){
+        //         alert("Nhiệt độ quá thấp");
+        //         nhietDo = Number(parseInt(prompt("NHập nhiệt độ ")))
+        //     }else if (nhietDo>100){
+        //         alert("Nhiệt độ quá cao");
+        //         nhietDo= Number(parseInt(prompt("Nhập nhiệt độ ")))
+        //     }
+        // } alert("Nhiệt độ bình thường")
+        let number = 0;
+
+        do {
+            number = parseInt(prompt("Nhập nhiệt độ:"))
+            if (number <20){
+                alert("Tăng nhiệt độ.");
+            }else if (number > 100){
+                alert("giảm nhiệt độ.");
+            }else {
+                alert("NHiệt độ bình thường: "+number);
+                break;
+
             }
-        } alert("Nhiệt độ bình thường")
+        }while (true)
 
     }
 function bai3() {
-    let  f = 0,f0= 0,f1 = 0;
-    let fibonacci = " ";
-    for (let i=0; i<20;i++) {
-        if (i == 0) {
-            f = 1;
-            f1 = 1;
-            fibonacci += f + "   "
-        } else {
-            f = f0 + f1;
-            f0 = f1;
-            f1 = f;
-            fibonacci += f + "   "
-            console.log(i + " = " + f);
+    // let  f = 0,f0= 0,f1 = 0;
+    // let fibonacci = " ";
+    // for (let i=0; i<20;i++) {
+    //     if (i == 0) {
+    //         f = 1;
+    //         f1 = 1;
+    //         fibonacci += f + "   "
+    //     } else {
+    //         f = f0 + f1;
+    //         f0 = f1;
+    //         f1 = f;
+    //         fibonacci += f + "   "
+    //         console.log(i + " = " + f);
+    //     }
+    // }
+    // document.write(fibonacci)
+    let n = parseInt(prompt("input so fibonacci can hien thi:"))
+    let a = 1;
+    let b = 1;
+    let output = ""
+    for (let i =1;i<=n;i++){
+        if (i ==1|| i== 2){
+            output += "1 ";
+            a = 1;
+            b = 1;
+            continue
         }
+        let c = a + b;
+        output += c +" ";
+        a = b;
+        b = c;
     }
-    document.write(fibonacci)
+    document.write(output)
 }
 function bai4() {
-    let  f = 0,f0= 0,f1 = 0;
-    let chia5 = "";
-    let fibonacci = " ";
-    for (let i=0; i<20;i++) {
-        if (i == 0) {
-            f = 1;
-            f1 = 1;
-            fibonacci += f + "   "
-        } else {
-            f = f0 + f1;
-            f0 = f1;
-            f1 = f;
-            fibonacci += f + "   "
-            console.log(i + " = " + f);
-            if (f%5==0){
-                chia5=f;
-                break
-            }
+    let n = parseInt(prompt("input so fibonacci can hien thi:"))
+    let a = 1;
+    let b = 1;
+    let  output = " ";
+    let chia5 = " ";
+    for (let i =1;i<=n;i++){
+        if (i==1 || i== 2){
+            output += "1 ";
+            a = 1;
+            b = 1;
+            continue
+        }
+        let c = a + b;
+        output += c +" ";
+        a = b ;
+        b = c;
+        if (c % 5 ==0){
+            chia5 = c;
+            console.log(output)
+            document.write("Số chia hết cho 5 trong dãy là "+chia5 +"<br>")
         }
     }
-    document.write("Sô chia hết cho 5 trong dãy là "+chia5)
+
+    // let  f = 0,f0= 0,f1 = 0;
+    // let chia5 = "";
+    // let fibonacci = " ";
+    // for (let i=0; i<20;i++) {
+    //     if (i == 0) {
+    //         f = 1;
+    //         f1 = 1;
+    //         fibonacci += f + "   "
+    //     } else {
+    //         f = f0 + f1;
+    //         f0 = f1;
+    //         f1 = f;
+    //         fibonacci += f + "   "
+    //         console.log(i + " = " + f);
+    //         if (f%5==0){
+    //             chia5=f;
+    //             break
+    //         }
+    //     }
+    // }
+
 
 }
 function bai5() {
-    let  f = 0,f0= 0,f1 = 0,tong=0;
-    let fibonacci = " ";
-    for (let i=0; i<20;i++) {
-        if (i == 0) {
-            f = 1;
-            f1 = 1;
-            fibonacci += f + "   "
-            tong +=f
-        } else {
-            f = f0 + f1;
-            f0 = f1;
-            f1 = f;
-            fibonacci += f + "   "
-            console.log(i + " = " + f);
-            tong +=f
+    let n = parseInt(prompt("input so fibonacci can hien thi:"))
+    let a = 1;
+    let b = 1;
+    let tong = 0;
+    let  output = " ";
+    for (let i =1;i<=n;i++){
+        if (i==1 || i== 2){
+            output += "1 ";
+            a = 1;
+            b = 1;
+            tong += a
+            console.log(i + " = " + a);
+            continue
         }
+
+        let c = a + b;
+        output += c +" ";
+        a = b ;
+        b = c;
+        tong+= c;
+        console.log(i + " = " + c);
+
+
     }
-    document.write("Dãy Fibonacci là "+fibonacci+"<br>")
-    document.write("Tổng của các số = "+tong)
+    document.write("Dãy Fibonacci là "+output+"<br>")
+    document.write("Tổng của các số là "+tong)
+
+
+    // let  f = 0,f0= 0,f1 = 0,tong=0;
+    // let fibonacci = " ";
+    // for (let i=0; i<20;i++) {
+    //     if (i == 0) {
+    //         f = 1;
+    //         f1 = 1;
+    //         fibonacci += f + "   "
+    //         tong +=f
+    //     } else {
+    //         f = f0 + f1;
+    //         f0 = f1;
+    //         f1 = f;
+    //         fibonacci += f + "   "
+    //         console.log(i + " = " + f);
+    //         tong +=f
+    //     }
+    // }
+    // document.write("Dãy Fibonacci là "+fibonacci+"<br>")
+    // document.write("Tổng của các số = "+tong)
 }
 function bai6() {
-    let count=0,tong=0;
-    let dayso="" ;
+    let count = 0, tong =0;
+    let daySo = ""
     for (let i=1; ;i++){
-        if( i%7==0){
-            dayso+= i+"  ";
-            console.log(dayso);
+        if (i % 7==0){
+            daySo += i +" ";
+            console.log(daySo)
             tong+=i;
             count++;
-            if(count==30)
+            console.log(i+"="+count)
+            if (count==30)
                 break
+
         }
     }
-    document.write(dayso+"<br>");
-    document.write("Tổng bằng:" +tong);
+    document.write("Dãy số chia hết cho 7: "+"<br>"+daySo );
+    document.write("</br>Tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên: "+tong)
+
 }
 function bai7() {
     for ( let i=1;i<=100;i++){
-        if(i%3==0 && i%5==0 ){
-            document.write(i+"FizzBuzz <br>");
-        }else {
-            if (i%3==0){
-                document.write(i+"Fizz<br>");
+            if(i%3==0 && i%5==0 ){
+                document.write(i+" "+"FizzBuzz <br>");
+            }else if (i%3==0) {
+                    document.write(i+" "+"Fizz<br>");
             }else if (i%5==0){
-                document.write(i+"Buzz<br> ");
+                    document.write(i+" "+"Buzz<br> ");
+            }else {
+                    document.write(i+"<br>");
             }
         }
     }
+
+function bai8() {
+    let canDuoi = parseInt(prompt("Cận dưới"))
+    let canTren = parseInt(prompt("Cận trên:"))
+    let random = Math.floor(Math.random()*(canTren - canDuoi) + canDuoi)
+    let dem = 0;
+    do {
+        let a = parseInt(prompt("Nhập số bạn đoán: "))
+        if (random == a) {
+            alert('Chúc Mừng Bạn Đã Đoán Trúng')
+            break
+        } else if (random > a) {
+            alert('Số Bạn Nhập Nhỏ Hơn. CHúc Mừng Bạn May Mắn Lần Sau')
+            dem++;
+        } else {
+            alert('Số Bạn Nhập Lớn Hơn. CHúc Mừng Bạn May Mắn Lần Sau')
+            dem++;
+        }
+        if (dem >= 3) {
+            alert('Bạn Đã Hết Lượt Chơi')
+            break
+        }
+    } while (true);
+
+
 }
 </script>
 </body>

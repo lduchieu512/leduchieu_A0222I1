@@ -9,89 +9,188 @@
 <p><input type="button" value="Bài 2" onclick="bai2()"> Tính giai thừa của một số nguyên dương</p>
 <p><input type="button" value="Bài 3" onclick="bai3()"> In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau</p>
 <p><input type="button" value="Bài 4" onclick="bai4()"> In hình chữ nhật</p>
-<p><input type="button" value="Bài 5" onclick="bai5()"> Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.</p>
+<p><input type="button" value="Bài 5" onclick="bai5()"> Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi
+    biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.</p>
 <p><input type="button" value="Bài 6" onclick="bai6()"> In hình trái tim</p>
 
 
-
 <script>
-function bai1() {
-    let  f = 0,f0= 0,f1 = 0;
-    let fibonacci = " ";
-    for (let i=0; i<50;i++) {
-        if (i == 0) {
-            f = 1;
-            f1 = 1;
-            fibonacci += f + "  <br>"
+    function bai1() {
+        let n = parseInt(prompt("Input so fibonacci can hien thi:"))
+        let a = 1, b = 1;
+        let output = " ";
+        for (let i = 1; i <= n; i++) {
+            if (i == 1 || i == 2) {
+                output += "1 <br> "
+                a = 1;
+                b = 1;
+                continue
+            }
+            let c = a + b;
+            output += c + "<br> "
+            a = b;
+            b = c;
+
+        }
+        document.write(output)
+
+        // let  f = 0,f0= 0,f1 = 0;
+        // let fibonacci = " ";
+        // for (let i=0; i<50;i++) {
+        //     if (i == 0) {
+        //         f = 1;
+        //         f1 = 1;
+        //         fibonacci += f + "  <br>"
+        //     } else {
+        //         f = f0 + f1;
+        //         f0 = f1;
+        //         f1 = f;
+        //         fibonacci += f + "  <br>"
+        //         console.log(i + " = " + f);
+        //     }
+        // }
+        // document.write(fibonacci)
+    }
+
+    function bai2() {
+        let so = Number(prompt("Nhập giai thừa: "));
+        let giaiThua = 1;
+        if (so == 0 || so == 1) {
+            giaiThua = 1;
+            document.write("Giai thừa của " + so + " = " + giaiThua)
+        } else if (so < 0) {
+            alert("Error!")
         } else {
-            f = f0 + f1;
-            f0 = f1;
-            f1 = f;
-            fibonacci += f + "  <br>"
-            console.log(i + " = " + f);
+            for (i = 1; i <= so; i++) {
+                giaiThua = giaiThua * i;
+            }
+            document.write("Giai thừa của  " + so + " = " + giaiThua)
         }
-    }
-    document.write(fibonacci)
-}
-function bai2() {
-    let so = Number(prompt("nhập giai thừa: "));
-    let giai_thua =1;
-    if ( so == 0|| so ==1){
-        giai_thua = 1;
-        document.write("giai thừa của "+so+"="+giai_thua)
-    }else if (so<0){
-        alert("Error!")
-    }else {
-        for (i=1;i<=so;i++){
-
-            giai_thua = giai_thua*i;
-        }
-        document.write("giai thừa của "+so+"="+giai_thua)
-    }
-}
-function bai3() {
-    let stars = Number(prompt("Bạn thích nhiêu sao: "));
-    for (let i=0;i<stars;i++){
-        for (let j=0;j<=i;j++){
-            let sao = "*";
-            document.write(sao);
-        }
-        document.write("<br>")
-
-    }
-    document.write("<br><br>")
-    for (let i=stars;i>0;i--){
-        for (let j=0;j<i;j++){
-            let sao = "*";
-            document.write(sao);
-        }
-        document.write("<br>")
-
-    }
-    document.write("<br><br>")
-
-    for (let i=0;i<stars;i++){
-        for (let j=0;j<=i;j++){
-            let sao = "*";
-            document.write(sao);
-        }
-        document.write("<br>")
-
-    }
-    document.write("<br><br>")
-    document.write("<div style='width: 100px' align='right' >")
-
-    for (let i=stars;i>0;i--){
-        for (let j=0;j<i;j++){
-            let sao = "*";
-            document.write(sao);
-        }
-        document.write("<br>")
-
+        // let so = Number(prompt("nhập giai thừa: "));
+        // let giaiThua =1;
+        // if ( so == 0|| so ==1){
+        //     giaiThua =1;
+        //     document.write("giai thừa của "+so+"="+ giaiThua)
+        // }else if (so<0){
+        //     alert("Error!")
+        // }else {
+        //     for (i=1;i<=so;i++){
+        //
+        //         giaiThua =  giaiThua*i;
+        //     }
+        //     document.write("giai thừa của "+so+"="+ giaiThua)
+        // }
     }
 
-    document.write("</div>")
-}
+    function bai3() {
+        let stars = Number(prompt("Bạn thích nhiêu sao: "));
+        // for (i=0 ;i<stars; i++){
+        //     for (j=0;j<=i;j++){
+        //         let sao = "*";
+        //         document.write(sao)
+        //     }
+        //     document.write("</br>")
+        // }
+        // document.write("<br><br>")
+        // for (i=stars; i> 0; i--){
+        //     for (j=0;j<i;j++){
+        //         let sao ="*"
+        //         document.write(sao)
+        //     }
+        //     document.write("</br>")
+        // }
+        // document.write("<br><br>")
+        // for (i=0;i<stars;i++){
+        //     for (j=0;j<=i;j++){
+        //         let sao ="*"
+        //         document.write(sao)
+        //         console.log(sao)
+        //     }
+        //     document.write('</br>')
+        // }
+        // document.write("<br><br>")
+        // document.write("<div style='width: 100px' align='right' >")
+        //
+        // for (let i=stars;i>0;i--){
+        //     for (let j=0;j<i;j++){
+        //         let sao = "*";
+        //         document.write(sao);
+        //     }
+        //     document.write("<br>")
+        //
+        // }
+        //
+        // document.write("</div>")
+        for (let i = 0; i < stars; i++) {
+            for (let j = 0; j <= i; j++) {
+                let sao = "*";
+                document.write(sao);
+            }
+            document.write("<br>")
+
+        }
+        document.write("<br><br>")
+        for (let i = stars; i > 0; i--) {
+            for (let j = 0; j < i; j++) {
+                let sao = "*";
+                document.write(sao);
+            }
+            document.write("<br>")
+
+        }
+        document.write("<br><br>")
+        document.write("<div style='width: 100px' align='right' >")
+
+        for (let i = 0; i < stars; i++) {
+            for (let j = 0; j <= i; j++) {
+                let sao = "*";
+                document.write(sao);
+            }
+            document.write("<br>")
+
+        }
+        document.write("<br><br>")
+
+        for (let i = stars; i > 0; i--) {
+            for (let j = 0; j < i; j++) {
+                let sao = "*";
+                document.write(sao);
+            }
+            document.write("<br>")
+
+        }
+
+        document.write("</div>")
+    }
+
+    function bai4() {
+        for (let i = 0; i <= 10; i++) {
+            for (let j = 0; j <= 30; j++) {
+                if (i == 0 || i == 10 || j == 0 || j == 30) {
+                    document.write("<a style='color: red'>*<a>")
+                } else {
+                    document.write("<a style='color: white'>*<a>")
+                }
+
+            }
+            document.write("<br>")
+        }
+    }
+
+    function bai5() {
+        let soTien = Number(prompt("Nhập số tiền gửi ngân hàng lãi suất 5%/năm"))
+        let soThang = Number(prompt("Nhập số tháng gửi"))
+        let lai = 0.8;
+        document.write("Số tiền bạn gửi là " + soTien + " VNĐ trong " + soThang + " tháng với lãi suất 5%/năm" + "<br>")
+        for (let i = 1; i <= soThang; i++) {
+            let tienLai_Thang = soTien * lai / 100;
+            soTien = soTien + tienLai_Thang * soThang;
+        }
+        document.write("Tổng tiền lãi của bạn trong " + soThang + " là " + soTien + " VNĐ")
+
+
+    }
+
 </script>
 </body>
 </html>

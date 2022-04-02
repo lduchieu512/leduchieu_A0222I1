@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p><input type="button" value="Bài 1" onclick="bai1()"> Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử. Chương
+    trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.</p>
+<p><input type="button" value="Bài 2" onclick="bai2()">Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác
+    nhau. Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.</p>
+<p><input type="button" value="Bài 3" onclick="bai3()">Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn
+    nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.</p>
+<p><input type="button" value="Bài 4" onclick="bai4()">Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo
+    ngược các phần tử trong mảng đó.</p>
+<p><input type="button" value="Bài 5" onclick="bai5()"> Viết chương trình đếm số nguyên âm trong một chuỗi</p>
+<p><input type="button" value="Bài 6" onclick="bai6()"> Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10
+    phần tử, nhập/tạo phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng số
+    nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".</p>
+<p><input type="button" value="Bài 7" onclick="bai7()">Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10
+    phần tử, nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã
+    cho xoá V khỏi mảng (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần
+    tử cuối cùng của mảng)</p>
+<p><input type="button" value="Bài 8" onclick="bai8()">Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10
+    phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.</p>
+<p><input type="button" value="Bài 9" onclick="bai9()"> Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần
+    tử, gọi là mảng a và b. Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên. Chương trình sẽ lưu các phần tử
+    được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.</p>
+
+<script>
+    function bai1() {
+        let number = [1, 12, 5, 63, 24, 6, 84, 3, 2, 7];
+        let hight = [];
+        for (let i = 0; i < number.length; i++) {
+            if (number[i] > 10) {
+                hight.push(number[i]);
+            }
+        }
+        alert("Số nguyên lớn hơn hoặc bằng 10: " + hight);
+
+        // let mangso = []
+        // let mangsolon10 = []
+        // for(let i=0 ;i<10; i++){
+        //     mangso[i] = Number(prompt("Nhập số vào mảng"))
+        // }
+        // document.write("mangso = ["+mangso+"]<br>")
+        //
+        // for (let i=0; i<mangso.length; i++){
+        //
+        //     if(mangso[i]>10){
+        //         mangsolon10.push(mangso[i])
+        //     }
+        // }
+        // document.write("Các phần tử >= 10 trong mangso["+mangsolon10+"]<br>")
+    }
+
+    function bai2() {
+        let mangSo = [];
+        for (let i = 0; i < 10; i++) {
+            mangSo[i] = Number(prompt("Nhập mảng số: "))
+            // console.log(mangSo[i]);
+        }
+        // console.log('<hr>')
+
+        let max = 0;
+        let index = 0;
+        for (let i = 0; i < mangSo.length; i++) {
+            if (mangSo[i] > max) {
+                max = mangSo[i];
+                index = i;
+                // console.log(max)
+            }
+        }
+        alert("max " + max + " at position " + index);
+
+    }
+
+    function bai3() {
+        let array = [];
+        for (let i = 0; i < 10; i++) {
+            array[i] = Number(parseInt(prompt("Nhập 10 số nguyên vào mảng: ")))
+        }
+        let max = 0;
+        let tb = 0;
+        for (let j = 0; j < array.length; j++) {
+            tb = (array[j] + tb);
+            // console.log(tb)
+            if (max < array[j]) {
+                max = array[j]
+                // console.log(max)
+            }
+        }
+        tb = tb / 10;
+        alert("Giá trị lớn nhất trong Mảng: " + max);
+        alert("Trung bình cộng của các phần tử trong mảng: " + tb)
+    }
+
+    function bai4() {
+        let array = [];
+        for (let i = 0; i < 10; i++) {
+            array[i] = Number(prompt("Nhập phần tử  trong Mảng: "))
+        }
+        document.write("array = ["+array+"]<br>")
+        document.write("array = ["+array.reverse()+"]<br>")
+
+
+    }
+
+    function bai5() {
+        let mangSo= [],mangSoAm=[];
+        for (i=0;i<10;i++){
+            mangSo[i] =Number(prompt("Nhập số vào mảng: "))
+            if (mangSo[i]<0){
+                mangSoAm.push(mangSo[i]);
+            }
+        }
+        document.write("PHần tử trong mảng =["+mangSo+"]<br>");
+        document.write(mangSoAm+"<br>");
+
+    }
+    function bai6() {
+        
+    }
+</script>
+
+
+</body>
+</html>
