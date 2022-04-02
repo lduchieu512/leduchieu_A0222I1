@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><input type="button" value="Bài 1 " onclick="bai1()"> Viết chương trình khởi tạo mảng 2 chiều, gồm một bộ các phần tử
+    có sẵn, in ra các phần tử trong mảng. Chú ý: Sử dụng vòng lặp for lồng nhau</p>
+<p><input type="button" value="Bài 2 " onclick="bai2()">Viết một chương trình để in các ký tự trong một mảng theo thứ tự
+    đảo ngược. Ví dụ, nếu một mảng chứa các ký tự [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ là
+    "162csc"</p>
+<p><input type="button" value="Bài 3 " onclick="bai3()">Viết một chương trình khai báo một mảng ký tự và kích thước của
+    mảng. Chương trình này đếm số ký tự số trong mảng. </p>
+<p><input type="button" value="Bài 4 " onclick="bai4()">Viết một chương trình để đếm số từ trong một chuỗi</p>
+<p><input type="button" value="Bài 5 " onclick="bai5()">Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai
+    chuỗi có giống nhau hay không.</p>
+<p><input type="button" value="Bài 6 " onclick="bai6()">Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự
+    trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )</p>
+</body>
+<script>
+    function bai1() {
+        let a = [
+            [1, 2, 1, 24],
+            [8, 11, 9, 4],
+            [7, 0, 7, 45],
+            [9, 4, 6, 34],
+            [12, 34, 56, 78]
+        ];
+        for (let i in a) {
+            document.write("row" + i + "<br>");
+            for (let j in a[i]) {
+                document.write(" " + a[i][j] + "<br>");
+
+            }
+        }
+    }
+
+    function bai2() {
+        let arr = [];
+        for (let i = 0; i < 10; i++) {
+            arr[i] = prompt("Nhập phần tử vào mảng: ")
+        }
+        document.write("Mảng ban đầu [" + arr + "]<br>")
+        // let str = arr.toString();
+        // let str = arr.join("-");
+        arr.reverse();
+        let str = arr.join("");
+        document.write('Mảng đã đảo ngược:"' + str + '"')
+    }
+
+    function bai3() {
+        let arr = [];
+        for (let i = 0; i < 10; i++) {
+            arr[i] = prompt("Nhập phần tử vào mảng: ")
+        }
+        console.log(arr)
+        let count = 0;
+        let number = [];
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] % 1 === 0||arr[j]%2===1) {
+                number[j] = arr[j];
+                console.log(arr[j])
+                count++;
+            }
+        }
+        document.write("Các ký tự số trong mảng là " + number + " <br>")
+        document.write("Có " + count + " ký tự số trong mảng <br>")
+// chưa xong còn sửa
+
+    }
+    function bai4() {
+        let arr = [];
+        for (let i = 0; i < 10; i++) {
+            arr[i] = prompt("Nhập phần tử vào mảng: ")
+        }
+        for (let j =0;j<arr.length;j++){
+            if (arr[j])
+        }
+
+    }
+
+</script>
+</html>
