@@ -140,33 +140,54 @@
     }
 
     function bai7() {
+        // let arr = [];
+        // for (let i = 0; i < 5; i++) {
+        //     arr[i] = Number(prompt("Nhập phần tử vào mảng: "))
+        // }
+        // let a = Number(prompt("Nhập số nguyên V: "));
+        // let index = 0;
+        // let count = 0;
+        // let dem = 0;
+        // for (let j = 0; j < arr.length; j++) {
+        //     if (arr[j] == a) {
+        //         count++;
+        //         dem = index;
+        //     }
+        //     index++;
+        // }
+        // document.write("Mảng ban đầu [" + arr + "]<br>");
+        //
+        //    if (count > 0) {
+        //        arr.splice(dem, 1);
+        //        arr.push(0);
+        //        document.write("Mảng đã kiểm tra [" + arr + "]")
+        //
+        //    } else {
+        //        document.write("Phần tử số nguyên V (" + a + ") không thuộc mảng")
+        //    }
         let arr = [];
         for (let i = 0; i < 5; i++) {
             arr[i] = Number(prompt("Nhập phần tử vào mảng: "))
         }
+        document.write("Mảng ban đầu [" + arr + "]<br>");
         let a = Number(prompt("Nhập số nguyên V: "));
-        let index = 0;
-        let count = 0;
-        let dem = 0;
+        let flat = false;
         for (let j = 0; j < arr.length; j++) {
             if (arr[j] == a) {
-                count++;
-                dem = index;
-                break;
-
+                arr.splice(j, 1);
+                arr.push(0);
+                j -= 1;
+                flat= true
             }
-            index++;
         }
-        document.write("Mảng ban đầu [" + arr + "]<br>");
+        if (!flat){
+            document.write(a +" Không có trong dãy số")
+        }else {
+            document.write("V "+a+" thuộc dãy số " +"<br>")
+            document.write("Dãy số mới ["+arr+"]")
+        }
 
-           if (count > 0) {
-               arr.splice(dem, 1);
-               arr.push(0);
-               document.write("Mảng đã kiểm tra [" + arr + "]")
 
-           } else {
-               document.write("Phần tử số nguyên V (" + a + ") không thuộc mảng")
-           }
     }
 
     function bai8() {
@@ -176,10 +197,10 @@
         }
         document.write("Mảng ban đầu [" + arr + "]<br>");
 
-            arr.sort(function (a, b) {
-                return b - a; // giảm dần
-                // return a - b;// tăng dần
-            });
+        arr.sort(function (a, b) {
+            return b - a; // giảm dần
+            // return a - b;// tăng dần
+        });
         document.write("Mảng đã được sắp xếp giảm dần [" + arr + "]")
     }
 
@@ -192,9 +213,9 @@
         }
         let mangC = mangA.concat(mangB);
 
-        document.write("Mảng A ["+mangA+"]<br>")
-        document.write("Mảng B ["+mangB+"]<br>")
-        document.write("Mảng C ["+mangC+"]<br>")
+        document.write("Mảng A [" + mangA + "]<br>")
+        document.write("Mảng B [" + mangB + "]<br>")
+        document.write("Mảng C [" + mangC + "]<br>")
         mangC.sort(function (a, b) {
             // return b - a; // giảm dần
             return a - b;// tăng dần
