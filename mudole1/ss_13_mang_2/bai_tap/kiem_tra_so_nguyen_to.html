@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = Number(prompt("Nhập số cần kiểm tra "))
+     soNguyenTo(x)
+    function soNguyenTo(a) {
+        if (a<2){
+            document.write(a+" Không phải số nguyên tố")
+        }else {
+            let flg = true;
+            for (let i = 2; i < a; i++) {
+                if (a % i == 0) {
+                    flg = false;
+                    break;
+                }
+
+            }
+            if (flg == true) {
+                document.write(a + " Là số nguyên tố ")
+            } else {
+                document.write(a + " Không phải số nguyên tố")
+            }
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

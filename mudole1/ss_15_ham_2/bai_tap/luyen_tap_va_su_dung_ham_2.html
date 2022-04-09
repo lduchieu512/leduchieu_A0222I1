@@ -18,7 +18,7 @@
 <p><input type="button" value="Bài 6" onclick="bai6()">Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là
     nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.</p>
 <p><input type="button" value="Bài 7" onclick="bai7()"> Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số
-    nguyên đó.</p>
+    nguyên đó. [2,3]</p>
 <p><input type="button" value="Bài 8" onclick="bai8()">Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng
     số nguyên đó.</p>
 <p><input type="button" value="Bài 9" onclick="bai9()">Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra
@@ -64,18 +64,112 @@
         } else if (a < 0) {
             return ("Không có giai thừa");
         } else {
-             let gt = a;
+            let gt = a;
             for (let i = 2; i < a; i++) {
-                 gt = gt * i;
+                gt = gt * i;
 
             }
             return gt;
         }
 
     }
+
     // bài 4
     function bai4() {
+        let a = prompt("Input ");
+        let result = check(a);
+        document.write(result)
 
+    }
+
+    function check(x) {
+        if (x == "" || x == " ") {
+            return "Bạn chưa nhập số";
+        } else if (x % 1 == 0) {
+            flg = true;
+            return flg;
+        } else {
+            flg = false;
+            return flg;
+        }
+    }
+
+    // bài 5
+    function bai5() {
+        let x = [];
+        for (let i = 0; i < 3; i++) {
+            x[i] = Number(prompt("Nhập số"))
+        }
+        console.log(x)
+
+        let result = min(x);
+        document.write("Số nhỏ nhất trong 3 số là: " + result);
+
+    }
+
+    function min(arr) {
+        let min = arr[0]
+        for (let j = 1; j < arr.length; j++) {
+            if (arr[j] < min) {
+                min = arr[j];
+            }
+        }
+        return min;
+    }
+
+    // bài 6
+    function bai6() {
+        let x = parseInt(prompt("Nhập số "));
+        let result = checkBai6(x);
+        document.write(result);
+    }
+
+    function checkBai6(a) {
+         if (a > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    // bài 7
+    function bai7() {
+        let x = [ 2,3]
+        let displace = displaceNum(x)
+        document.write(displace)
+    }
+    function displaceNum(a) {
+        return a.reverse()
+    }
+    // bài 8 
+    function bai8() {
+        let x = []
+        for (let i=0;i<5;i++){
+            x[i] = Number(prompt("Nhập số nguyên vào mảng"));
+        }
+        let displace = displaceNum(x)
+        document.write("["+displace+"]")
+    }
+    // bài 9
+    function bai9() {
+        let x = prompt("Nhập số kí tự cần tìm")
+        let y = checkBai9(x)
+        document.write(y)
+
+    }
+    function checkBai9(a) {
+        let count=0;
+        let x = []
+        for (let i=0;i<5;i++){
+            x[i] =prompt("Nhập số nguyên vào mảng");
+            if (x[i] ==a){
+                count++;
+            }
+
+        }
+        if (count==0){
+            count = -1;
+        }
+        return count;
     }
 
 </script>
