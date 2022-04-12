@@ -125,51 +125,59 @@
     }
 
     function checkBai6(a) {
-         if (a > 0) {
+        if (a > 0) {
             return true;
         } else {
             return false;
         }
     }
+
     // bài 7
     function bai7() {
-        let x = [ 2,3]
+        let x = [2, 3]
         let displace = displaceNum(x)
         document.write(displace)
     }
+
     function displaceNum(a) {
         return a.reverse()
     }
-    // bài 8 
+
+    // bài 8
     function bai8() {
         let x = []
-        for (let i=0;i<5;i++){
+        for (let i = 0; i < 5; i++) {
             x[i] = Number(prompt("Nhập số nguyên vào mảng"));
         }
         let displace = displaceNum(x)
-        document.write("["+displace+"]")
+        document.write("[" + displace + "]")
     }
+
     // bài 9
     function bai9() {
-        let x = prompt("Nhập số kí tự cần tìm")
-        let y = checkBai9(x)
-        document.write(y)
-
+        let x = [];
+        for (let i = 0; i < 5; i++) {
+            x[i] = prompt("Nhập số nguyên vào mảng");
+        }
+        let z = prompt("Nhập số kí tự cần tìm")
+        let y = checkBai9(z, x)
+        if (y > 0) {
+            document.write("ký tự "+z + " xuất hiện " + y + " lần trong mảng ")
+        } else {
+            document.write("Không có dữ liệu trong mảng")
+        }
     }
-    function checkBai9(a) {
-        let count=0;
-        let x = []
-        for (let i=0;i<5;i++){
-            x[i] =prompt("Nhập số nguyên vào mảng");
-            if (x[i] ==a){
+    function checkBai9(z, x) {
+        let count = 0;
+        for (let j = 0; j < x.length; j++) {
+            if (z == x[j]) {
                 count++;
             }
-
         }
-        if (count==0){
-            count = -1;
+        if (count > 0) {
+            return count;
         }
-        return count;
+        return -1
     }
 
 </script>
