@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+        getDienTich() {
+            return this.length * this.width;
+        }
+        getChuVi() {
+            return (this.width + this.length) * 2;
+        }
+
+    }
+
+    let hinh1 = new Rectangle(30, 20)
+    document.write("Chiều dài: " + hinh1.length+"<br>");
+    document.write("Chiều rộng:" + hinh1.width+"<br>");
+    document.write("Diện tích hình chữ nhật = " +hinh1.getDienTich()+"<br>");
+    document.write("Chu vi hình chữ nhật = " +hinh1.getChuVi()+"<br>");
+
+    hinh1.length = 500 ;
+    hinh1.width = 200;
+    document.write("Chiều dài: " + hinh1.length+"<br>");
+    document.write("Chiều rộng:" + hinh1.width+"<br>");
+    document.write("Diện tích hình chữ nhật = " +hinh1.getDienTich()+"<br>");
+    document.write("Chu vi hình chữ nhật = " +hinh1.getChuVi()+"<br>");
+
+
+
+    document.write("<canvas id=\"myCanvas\" width=\"350px\" height=\"200px\" style=\"border:1px solid #d3d3d3;\">\n")
+
+</script>
+</body>
+</html>

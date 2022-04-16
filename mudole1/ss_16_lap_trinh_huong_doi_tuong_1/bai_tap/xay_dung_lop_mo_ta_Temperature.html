@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(c) {
+            this.c = c;
+        }
+
+        getCelsiusToFahrenheit() {
+            return this.c * 9 / 5 + 32;
+        }
+
+        getCelsiusToKenvin() {
+            return this.c + 273.15;
+        }
+    }
+
+    let x = Number(prompt("Nhập nhiệt độ"))
+    let input = new Temperature(x);
+    document.write("Độ C: " + input.c + "<br>");
+    document.write("Độ F: " + input.getCelsiusToFahrenheit() + "<br>");
+    document.write("Độ K: " + input.getCelsiusToKenvin() + "<br>");
+
+
+</script>
+</body>
+</html>
