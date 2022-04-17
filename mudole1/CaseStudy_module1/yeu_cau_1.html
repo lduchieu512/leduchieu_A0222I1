@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+<p><input type="button" value="Bài 1" onclick="bai1()"> Vẽ hình chữ nhật rỗng chiều dài n và chiều rộng m theo hình dưới
+    đây. </p>
+<p><input type="button" value="Bài 2" onclick="bai2()"> Vẽ tam giác vuông cân rỗng có chiều cao h. Ví dụ: h = 5</p>
+<p><input type="button" value="Bài 3" onclick="bai3()"> Vẽ tam giác cân đặc có chiều cao h. Ví dụ: h = 25</p>
+<p><input type="button" value="Bài 4" onclick="bai4()"> Vẽ tam giác cân rỗng có chiều cao h. Ví dụ: h = 5 </p>
+
+
+<script>
+    function bai1() {
+        for (let i = 1; i <= 7; i++) {
+            for (let j = 1; j <= 10; j++) {
+                if (j == 1 || j == 10 || i == 1 || i == 7) {
+                    document.write("<a style='color: black'>*</a>")
+                } else {
+                    document.write("<a style='color: white'>*</a>")
+                }
+            }
+            document.write("<br>")
+        }
+    }
+
+    function bai2() {
+        let sao = Number(prompt("nhập sao"))
+        for (let i = 1; i <= sao; i++) {
+            for (let j = 1; j <= i; j++) {
+                if (j == 1 || j == i || i == sao) {
+                    document.write("<a style='color: black'>*</a>")
+                } else {
+                    document.write("<a style='color: white'>*</a>")
+                }
+            }
+            document.write('<br>')
+        }
+    }
+
+    function bai3() {
+        document.write("<div style='text-align: center'>")
+        let sao = Number(prompt("nhập sao"))
+        for (let i = 1; i <= sao; i += 2) {
+            for (let j = 1; j <= i; j++) {
+                document.write("<a  style='width: 500px; color: black'>*</a>")
+
+
+            }
+            document.write('<br>')
+
+        }
+        document.write("</div>")
+    }
+
+    function bai4() {
+        document.write("<div style='text-align: center'>")
+        let sao = Number(prompt("nhập sao"))
+        for (let i = 1; i <= sao; i++) {
+            for (let j = 1; j <= i; j++) {
+                if (j == 1 || j == i || i == sao) {
+                    document.write("<a style='color: black'>*</a>")
+                } else {
+                    document.write("<a style='color: white'>*</a>")
+                }
+            }
+            document.write('<br>')
+        }
+        document.write("</div>")
+    }
+
+
+</script>
+</body>
+</html>
