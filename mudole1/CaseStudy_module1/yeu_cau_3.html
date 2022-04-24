@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><input type="button" value="Bài 1" onclick="bai1()">Cho mảng a chỉ chứa các số nguyên</p>
+<p>Xây dựng mảng b là prefix sums của mảng a cụ thể theo công thức:</p>
+<p b[0]=a[0]></p>
+<p>b[1] = a[0] + a[1]</p>
+<p> b[2] = a[0] + a[1] + a[2]</p>
+<p>....</p>
+<p>b[n - 1] = a[0] + a[1] + ... + a[n - 1]</p>
+<p>với n là độ dài của mảng a.</p>
+<p>Ví dụ: Cho a = [1, 2, 3], thì kết quả prefixSums(a) = [1, 3, 6].</p>
+<p>Mảng b được tạo ra: [1, 1 + 2, 1 + 2 + 3] = [1, 3, 6]</p>
+
+<p><input type="button" value="Bài 2" onclick="bai2()">Cho 2 mảng A và B chứa số nguyên. Tìm ra một mảng đã được sắp xếp
+    chứa các phần tử xuất hiện trong mảng B nhưng lại không xuất hiện A</p>
+<p>Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện</p>
+<p>Ví dụ:  A=[7,2,5,3,5,3] và B=[7,2,5,4,6,3,5,3] thì kết quả missingValue(A, B) = [4, 6]</p>
+
+<p><input type="button" value="Bài 3" onclick="bai3()"></p>
+<p><input type="button" value="Bài 4" onclick="bai4()"></p>
+<p><input type="button" value="Bài 5" onclick="bai5()"></p>
+
+</body>
+<script>
+    function bai1() {
+        // let a = [5, 3, 8, 12];
+        // let b = Array(a.length);
+        // for (let i = 0; i < a.length; i++) {
+        //     if (i == 0) {
+        //         b[i] = a[i];
+        //     } else if (i > 0) {
+        //         b[i] = a[i] + a[i--]
+        //
+        //     }
+        //
+        // }
+        // console.log(b)
+
+
+
+
+    }
+
+    function bai2() {
+        let arr1 = [2,4,8,6,0,64,9];
+        let arr2 = [9,7,8,23,0,76,23,790,4,5,123];
+        document.write(arr1+"<br>")
+        document.write(arr2+"<br><br>")
+        let array =[];
+       let ab =[];
+       let cd =[];
+        for (let i=0;i<arr1.length;i++){
+            for (let j =0;j<arr2.length;j++){
+                if (arr1[i]==arr2[j] ){
+                    array.push(arr1[i])
+                    arr2.splice(j,1)
+                    arr1.splice(i,1)
+                }
+            }
+        }
+
+        cd.push(arr1)
+        ab.push(arr2)
+
+
+        document.write(ab+"có trong B mà k có trong A<br>")
+        document.write(cd+"có trong A mà k có trong A <br>")
+        document.write(array+"giống nhau<br>")
+
+
+
+    }
+
+
+</script>
+</html>
