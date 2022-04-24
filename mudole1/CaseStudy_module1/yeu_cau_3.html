@@ -19,59 +19,130 @@
 <p><input type="button" value="Bài 2" onclick="bai2()">Cho 2 mảng A và B chứa số nguyên. Tìm ra một mảng đã được sắp xếp
     chứa các phần tử xuất hiện trong mảng B nhưng lại không xuất hiện A</p>
 <p>Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện</p>
-<p>Ví dụ:  A=[7,2,5,3,5,3] và B=[7,2,5,4,6,3,5,3] thì kết quả missingValue(A, B) = [4, 6]</p>
+<p>Ví dụ: A=[7,2,5,3,5,3] và B=[7,2,5,4,6,3,5,3] thì kết quả missingValue(A, B) = [4, 6]</p>
 
-<p><input type="button" value="Bài 3" onclick="bai3()"></p>
-<p><input type="button" value="Bài 4" onclick="bai4()"></p>
-<p><input type="button" value="Bài 5" onclick="bai5()"></p>
+<p><input type="button" value="Bài 3" onclick="bai3()">Cho một danh sách các phân số, hãy tìm chỉ số của phân số lớn
+    nhất (đếm từ 0)
+    . Giả định rằng không có các phân số bằng nhau trong tập đầu vào
+</p>
+<p>Ví dụ: numerators = [5, 2, 5] và denominators = [6, 3, 4], thì kết quả maxFraction(numerators, denominators) =
+    2. </p>
+<p>=> 5/4 là phân số lớn nhất, có chỉ số là 2.</p>
+<p><input type="button" value="Bài 4" onclick="bai4()">Viết một chương trình nhập một số từ bàn phím và in ra màn hình
+    bằng chữ. Ví dụ 1234, kết quả in ra màn hình là một hai ba bốn.</p>
+<p><input type="button" value="Bài 5" onclick="bai5()">Giả sử menu của chúng ta có các loại thức uống như sau:</p>
+<p>Cafe,
+    Cam vắt,
+    Nước ép cà rốt,
+    Nước ép cà chua,
+    Nước lọc,
+    Nước dừa,
+</p>
+<p>Viết một chương trình gọi thức uống đơn giản.</p>
 
 </body>
 <script>
     function bai1() {
-        // let a = [5, 3, 8, 12];
-        // let b = Array(a.length);
-        // for (let i = 0; i < a.length; i++) {
-        //     if (i == 0) {
-        //         b[i] = a[i];
-        //     } else if (i > 0) {
-        //         b[i] = a[i] + a[i--]
-        //
-        //     }
-        //
-        // }
-        // console.log(b)
-
-
-
-
+        let arr1 = [1, 5, 6, 3];
+        let sum = 0;
+        for (let i = 0; i < arr1.length; i++) {
+            sum += arr1[i];
+        }
+        alert('Sum của mảng = [1,5,6,3]: ' + sum)
     }
 
     function bai2() {
-        let arr1 = [2,4,8,6,0,64,9];
-        let arr2 = [9,7,8,23,0,76,23,790,4,5,123];
-        document.write(arr1+"<br>")
-        document.write(arr2+"<br><br>")
-        let array =[];
-       let ab =[];
-       let cd =[];
-        for (let i=0;i<arr1.length;i++){
-            for (let j =0;j<arr2.length;j++){
-                if (arr1[i]==arr2[j] ){
-                    array.push(arr1[i])
-                    arr2.splice(j,1)
-                    arr1.splice(i,1)
+        let arr1 = [1, 2, 3, 4, 5, 11, 12];
+        let arr2 = [6, 7, 2, 5, 8, 9, 0, 1, 17, 18, 13];
+        let arr3 = [];
+        for (let i = 0; i < arr2.length; i++) {
+            for (let j = 0; j < arr1.length; j++) {
+                if (arr2[i] == arr1[j]) {
+                    arr2.splice(i, 1);
                 }
             }
         }
+        arr3.push(arr2);
+        alert(arr3);
+    }
 
-        cd.push(arr1)
-        ab.push(arr2)
+    function bai3() {
+        let arrA = [5, 2, 5];
+        let arrB = [6, 3, 4];
+        let max = 0;
+        let hienThi = '';
+        for (let i = 0; i < arrA.length; i++) {
+            if (arrA[i] / arrB[i] > max) {
+                max = arrA[i] / arrB[i];
+                hienThi = arrA[i] + "/" + arrB[i]
+            }
+        }
+        alert(hienThi);
+    }
 
+    function bai4() {
+        let arrChu = ["một", "hai", "ba", "bốn", "năm"]
+        let arrSo = [1, 2, 3, 4, 5, 6]
+        let arr = prompt("Input number")
+        let arrayNumber = arr.split("");
+        let result = [];
+        for (let i = 0; i < arrayNumber.length; i++) {
+            for (let j = 0; j < arrSo.length; j++) {
+                if (arrayNumber[i] == arrSo[j]) {
+                    result.push(arrChu[j])
+                }
+            }
+        }
+        alert(result.join(' '))
+    }
 
-        document.write(ab+"có trong B mà k có trong A<br>")
-        document.write(cd+"có trong A mà k có trong A <br>")
-        document.write(array+"giống nhau<br>")
+    function bai5() {
+        let tongCong = 0;
 
+        do {
+            let menu = prompt(" Menu của chúng ta có các loại thức uống như sau:\n" +
+                "1. Cafe \n" +
+                "2. Cam vắt\n" +
+                "3. Nước ép cà rốt\n" +
+                "4. Nước ép cà chua\n" +
+                "5. Nước lọc\n" +
+                "6. Nước dừa\n" +
+                "7. Thoát")
+            if (menu == 1) {
+                confirm("Cafe :12.000VND")
+                let mot = prompt("số lượng: ");
+                let tong1 = mot * 12000;
+                tongCong += tong1;
+            } else if (menu == 2) {
+                confirm("Cam vắt :30.000VND")
+                let hai = prompt("số lượng: ");
+                let tong2 = hai * 30000;
+                tongCong += tong2;
+            } else if (menu == 3) {
+                confirm("Nước ép cà rốt :27.000VND")
+                let ba =prompt("số lượng: ");
+                let tong3 = ba * 27000;
+                tongCong += tong3;
+            }else if (menu == 4) {
+                confirm("Nước ép cà chua :25.000VND")
+                let bon =prompt("số lượng: ");
+                let tong4 = bon * 25000;
+                tongCong += tong4;
+            }else if (menu == 5) {
+                confirm("Nước lọc :10.000VND")
+                let nam =prompt("số lượng: ");
+                let tong5 = nam* 10000;
+                tongCong += tong5;
+            }else if (menu == 6) {
+                confirm("Nước dừa :15.000VND")
+                let sau =prompt("số lượng: ");
+                let tong6 = sau* 15000;
+                tongCong += tong6;
+            }else if (menu == 7) {
+                alert(tongCong);
+                break;
+            }
+        } while (true)
 
 
     }

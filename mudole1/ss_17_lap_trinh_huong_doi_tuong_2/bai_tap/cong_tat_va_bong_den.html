@@ -6,33 +6,65 @@
 </head>
 <body>
 <script>
-    class SwitchButton{
-        constructor(status,lamp) {
-            this.status = status;
-            this.lamp = lamp;
+    class  ElectricLamp{
+        constructor() {
+            this.status = false;
         }
-        connectTolamp(ElectricLamp){
-
+        get turnOff(){
+            this.status = false
+            return this.status
+        }
+        get turnOn(){
+            this.status = true
+            return this.status
+        }
+    }
+    class SwitchButton{
+        constructor(electric) {
+            this.electric =false;
+        }
+         connectTolamp(){
+             if (this.status == true && this.electric == true){
+                 document.write("Đã bật điện và đèn sáng<br>")
+                 console.log("Chưa bật công tắc đèn<br>")
+             }else if(this.status == false && this.electric == true){
+                 document.write("Chưa cắm ổ điện<br>")
+                 console.log("Chưa bật công tắc đèn<br>")
+             }else if(this.status == true && this.electric == false){
+                 document.write("Chưa bật công tắc đèn<br>")
+                 console.log("Chưa bật công tắc đèn<br>")
+             }else{
+                 document.write("Chưa bật công tắc đèn và cắm điện<br>")
+                 console.log("Chưa bật công tắc đèn và cắm điện<br>")
+             }
         }
         get switchOff(){
-
+            this.status = false;
+            return this.status;
         }
         get switchOn(){
-
+            this.status = true;
+            return this.status;
         }
 
     }
-    class  ElectricLamp{
-        constructor(status) {
-            this.status = status;
-        }
-        get TurnOff(){
+    let den = new ElectricLamp()
+    let bat_tat = den.turnOn()
+    let dien = new SwitchButton()
+    dien.switchOn()
+    dien.connectTolamp(bat_tat)
 
-        }
-        get TurnOn(){
+    bat_tat = den.turnOff()
+    dien.switchOn()
+    dien.connectTolamp(bat_tat)
 
-        }
-    }
+    bat_tat = den.turnOff()
+    dien.switchOff()
+    dien.connectTolamp(bat_tat)
+
+    bat_tat = den.turnOn()
+    dien.switchOff()
+    dien.connectTolamp(bat_tat)
 
 
 
