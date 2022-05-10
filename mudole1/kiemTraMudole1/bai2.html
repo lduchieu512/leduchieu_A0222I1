@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập chuỗi kí tự");
+    let inHoa = ["A", "B", "C", "D", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "L", "K", "J", "H", "G", "F", "Z", "X", "V", "N", "M"];
+    let count = 0;
+    function dem(x) {
+        for (let i = 0; i < x.length; i++) {
+                for (let j = 0; j < inHoa.length; j++) {
+                    if (x.charAt(i) == inHoa[j]) {
+                        count++;
+                    }
+                }
+
+        }
+    }
+     dem(a)
+    if (count > 0) {
+        alert(count)
+    } else {
+        alert("The string is not contain upper char")
+    }
+
+    // let chuHoa = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']
+    // let chuoiNhap = prompt("Nhập ký tự")
+    // //let chuoi = "abcdeRSAD"
+    // let count = 0;
+    //
+    // function checkString(string) {
+    //     for (let i = 0; i < string.length; i++) {
+    //         for (let j = 0; j < chuHoa.length; j++) {
+    //             if (string.charAt(i) == chuHoa[j]) {
+    //                 count++
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // checkString(chuoiNhap)
+    // if (count > 0) {
+    //     alert(count)
+    // } else {
+    //     alert("The string is not contain upper char")
+    // }
+
+</script>
+</body>
+</html>

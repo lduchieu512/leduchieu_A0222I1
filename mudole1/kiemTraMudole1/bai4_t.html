@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table tr td {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<p id="displayTable"></p>
+
+<br>
+<button onclick="addPhone()">Thêm mới điện thoại</button>
+<script>
+    let listPhone = [["12324", "Iphone6", 'Iphone',35000000]];
+    function displayPhone(listOfBook) {
+        let display =
+            '<table border="1" class="table-book">' +
+            "<tr>" +
+            "<th>Mã điện thoại</th>" +
+            "<th>Tên</th>" +
+            "<th>Hãng</th>" +
+            "<th>Giá(VND)</th>" +
+
+            "</tr>";
+        for (let i = 0; i < listOfBook.length; i++) {
+            display += "<tr>";
+            for (let j = 0; j < listOfBook[i].length; j++) {
+                display += "<td>" + listOfBook[i][j] + "</td>";
+            }
+            display += "</tr>";
+        }
+        display += "</table>";
+        document.getElementById("displayTable").innerHTML = display;
+    }
+    displayPhone(listPhone);
+    class Phone {
+        constructor(ma,ten,hang,gia) {
+            this.ma = ma;
+            this.ten = ten;
+            this.hang = hang;
+            this.gia = gia;
+        }
+
+        setMa() {
+            this.ma = prompt("Nhập mã điện thoại")
+        }
+        setTen() {
+            this.ten = prompt("Nhập tên")
+        }
+        setHang() {
+            this.hang = prompt("Nhập hãng")
+        }
+        setGia() {
+            this.gia= parseInt(prompt("Nhập giá"))
+        }
+    }
+
+    let phone = new Phone()
+    function addPhone() {
+        let arrlist = []
+        phone.setMa();
+        phone.setTen();
+        phone.setHang();
+        phone.setGia();
+        arrlist.push(phone.ma);
+        arrlist.push(phone.ten);
+        arrlist.push(phone.hang);
+        arrlist.push(phone.gia);
+        listPhone.push(arrlist)
+        displayPhone(listPhone);
+
+    }
+</script>
+</body>
+</html>

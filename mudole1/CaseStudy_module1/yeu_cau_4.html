@@ -5,6 +5,96 @@
     <title>Title</title>
 </head>
 <body>
+<p><input type="button" value="Bài 1" onclick="bai1()"> Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu
+    sao cho trong xâu không có 2 dấu cách liền nhau và bắt đầu mỗi từ phải in hoa. </p>
+<p>Và một hàm tìm từ dài nhất trong 1 xâu ký tự. Hàm main sử dụng các hàm này để nhập xâu ký tự từ bàn phím, in ra xâu
+    trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó.</p>
+<p><input type="button" value="Bài 2" onclick="bai2()">Cho xâu kí tự. Hãy đếm số lượng kí tự khác nhau trong xâu đó</p>
+<p><input type="button" value="Bài 3" onclick="bai3()">Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng.</p>
+
+
+<script>
+    function bai1() {
+        function standardized(name) {
+            name = name.trim().toLowerCase();
+            let nameArray = Array.from(name);
+            for (let i = 0; i < nameArray.length - 1; i++) {
+                if (nameArray[i] === " " && nameArray[i + 1] === " ") {
+                    for (let j = i + 1; j < nameArray.length-1; j++) {
+                        nameArray[j] = nameArray[j + 1];
+                    }
+                    i--;
+                    nameArray.pop();
+                }
+
+            }
+            nameArray[0] = nameArray[0].toUpperCase();
+            for (let i = 0; i < nameArray.length - 1; i++) {
+                if (nameArray[i] === " ") {
+                    nameArray[i + 1] = nameArray[i + 1].toUpperCase();
+                }
+            }
+            return nameArray.join("");
+        }
+        function maxLength(name){
+            let arrName = name.split(" ");
+            let maxName = arrName[0];
+            for (let i =0;i<arrName.length;i++){
+                if (maxName.length<arrName[i].length){
+                    maxName = arrName[i];
+                }
+
+            }
+            return maxName;
+        }
+
+
+        let name = prompt("Nhập vào tên: ")
+        alert("Tên ban đầu là: " + name +
+            "\nTên chuẩn hoá là " + standardized(name)+
+        "\nTừ có độ dài lớn nhất là: "+maxLength(standardized(name)));
+
+
+    }
+    function bai2() {
+        // aaaabbbbccc
+        let str = prompt("Nhập vào xâu ký tự:");
+        alert("Có "+differentSymbolsNaive(str)+" ký tự khác nhau")
+        function differentSymbolsNaive(str) {
+            let arr =[];
+            for (let i =0;i<str.length;i++){
+                if (arr.indexOf(str.charAt(i))=== -1){
+                    arr.push(str.charAt(i));
+                }
+            }
+            return arr.length;
+        }
+
+    }
+    function bai3() {
+        let s1 = prompt("Nhập vào xâu ký tự:")
+        let s2 = prompt("Nhập vào xâu ký tự:")
+        alert(commonCharacterCount(s1,s2))
+        function commonCharacterCount(s1,s2) {
+            let arr1 = s1.split("") //aabcc
+            let arr2 = s2.split("") //adcaa
+            let count =0;
+            for (let i=0;i<arr1.length;i++){
+                for (let j=0;j<arr2.length;j++){
+                    if (arr1[i]===arr2[j]){
+                        count++;
+                        arr1.splice(i,1);
+                        arr2.splice(j,1);
+                        i--;
+                        break;
+                    }
+                }
+            }
+            return count;
+        }
+    }
+</script>
+
 
 </body>
 </html>

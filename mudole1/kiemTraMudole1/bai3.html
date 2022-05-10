@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr1 = [1,5,6,23,8,47,10,3];
+    // let ketQua = soNguyenTo(arr1);
+    // alert(ketQua);
+    // let arrSoNguyenTo = [];
+    // function soNguyenTo(a) {
+    //     if (a<2){
+    //         return false;
+    //     }else {
+    //         for (let i = 2; i < a; i++) {
+    //             if (a % i == 0) {
+    //                 return false;
+    //
+    //             }
+    //         }
+    //     }
+    //     return true;
+    // }
+    // function sapXep() {
+    //     for (let i =0;i<arrSoNguyenTo;i++){
+    //
+    //     }
+    // }
+    let arrSoNguyen = [1, 5, 6, 23, 8, 47, 10, 3];
+
+    function isPrime(number) {
+        if (number < 2) {
+            return false;
+        } else {
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    function getPrime(arrSoNguyen) {
+        let arrSoNguyenTo = []
+        for (let i = 0; i < arrSoNguyen.length; i++) {
+            let flag = isPrime(arrSoNguyen[i]);
+            if (flag) {
+                arrSoNguyenTo.push(arrSoNguyen[i])
+            }
+        }
+        arrSoNguyenTo.sort(function (a, b) {
+            return a - b;
+        })
+        return arrSoNguyenTo;
+    }
+
+
+    console.log(getPrime(arrSoNguyen))
+
+
+
+</script>
+
+</body>
+</html>

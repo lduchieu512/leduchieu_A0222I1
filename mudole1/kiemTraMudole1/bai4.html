@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Phone{
+        constructor(idPhone,ten,hang,gia) {
+            this.idPhone = idPhone;
+            this.ten = ten;
+            this.hang= hang;
+            this.gia = gia;
+        }
+        //ID
+        get getIdPhone(){
+            return this.idPhone;
+        }
+        set setIdPhone(id){
+            this.getIdPhone = id;
+        }
+        //TEN
+        get getTen(){
+            return this.ten;
+        }
+        set setTen(ten){
+            this.ten = ten;
+        }
+        //
+        get getHang(){
+            return this.hang;
+        }
+        set setHang(hang){
+            this.hang = hang;
+        }
+        // Gia
+        get getGia(){
+            return this.gia;
+        }
+        set setGia(gia){
+            this.gia = gia;
+        }
+
+
+    }
+    let Iphone =  new Phone(312,'iphone12','Iphone',23000000);
+    //Iphone.setGia = prompt("thay đổi giá")
+
+
+
+
+</script>
+
+</body>
+</html>

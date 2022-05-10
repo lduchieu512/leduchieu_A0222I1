@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><input type="button" value="Bài 1" onclick="bai1()"> Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n.
+    Với m, n là các số nhập từ bàn phím. </p>
+<p><input type="button" value="Bài 2" onclick="bai2()">Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số
+    nguyên tố có trong mảng đó. </p>
+<p><input type="button" value="Bài 3" onclick="bai3()"> Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều</p>
+<script>
+    function createArr() {
+        let m = prompt("Nhập m")
+        let n = prompt("Nhập n")
+        let arr = [];
+
+        for (let i = 0; i < m; i++) {
+            let arr1 = [];
+            for (let j = 0; j < n; j++) {
+                arr1[j] = parseInt(prompt('Nhập vào'))
+            }
+            arr[i] = arr1;
+        }
+        return arr;
+    }
+    function bai1() {
+
+        let arr = createArr();
+        let tong = 0;
+        console.log(arr)
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] % 2 === 0) {
+                    tong += arr[i][j];
+                }
+            }
+        }
+        alert(tong);
+    }
+
+    function bai2() {
+        let m = prompt("Nhập m")
+        let n = prompt("Nhập n")
+        let arr = [];
+        let soNguyenTo = [];
+        for (let i = 0; i < m; i++) {
+            let arr1 = [];
+            for (let j = 0; j < n; j++) {
+                arr1[j] = parseInt(prompt('Nhập vào'))
+            }
+            arr[i] = arr1;
+        }
+
+        function checkPrime(number) {
+            if (number < 2) {
+                return false;
+            }
+            for (let i = 2; i < Math.sqrt(number); i++) {
+                if (number % i) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (checkPrime(arr[i][j])) {
+                    soNguyenTo.push(arr[i][j]);
+                }
+            }
+        }
+        console.table(arr);
+        console.log(soNguyenTo)
+
+    }
+
+    function bai3() {
+        let arr = createArr();
+
+        let max = arr[0][0];
+        let min = arr[0][0];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] > max) {
+                    max = arr[i][j];
+                } else if (arr[i][j] < min){
+                    min =  arr[i][j];
+                }
+            }
+        }
+        console.table(arr)
+        alert("Số lớn nhất trong mảng 2 chiều: " + max+
+        "\nSố nhỏ nhất trong mảng 2 chiều: " + min);
+
+    }
+
+
+</script>
+</body>
+</html>
