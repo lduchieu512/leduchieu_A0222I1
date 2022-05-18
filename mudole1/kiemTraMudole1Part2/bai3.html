@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    table tr td {
+        width: 300px;
+    }
+</style>
+<body>
+<p id="displayTable"></p>
+<br>
+<button onclick="addBook()">Thêm sách đã có </button>
+<script>
+    let listBook = [["12324", "Toán", '2002',3,true]];
+
+    function displayPhone(listOfBook) {
+        let display =
+            '<table border="1" class="table-book">' +
+            "<tr>" +
+            "<th>Mã số sách</th>" +
+            "<th>Tên sách</th>" +
+            "<th>Năm sản xuất</th>" +
+            "<th>Số quyển</th>" +
+            "<th>Tình trạng</th>" +
+
+            "</tr>";
+        for (let i = 0; i < listOfBook.length; i++) {
+            display += "<tr>";
+            for (let j = 0; j < listOfBook[i].length; j++) {
+                display += "<td>" + listOfBook[i][j] + "</td>";
+            }
+            display += "</tr>";
+        }
+        display += "</table>";
+        document.getElementById("displayTable").innerHTML = display;
+    }
+    displayPhone(listBook);
+    class Book {
+        constructor(ma,ten,nam,soLuong,trangThai) {
+            this.ma = ma;
+            this.ten = ten;
+            this.nam = nam;
+            this.soLuong = soLuong;
+            this.trangThai = trangThai;
+        }
+
+        get getMa() {
+            return this.ma;
+        }
+        get getTen() {
+            return this.ten;
+        }
+        get getNam() {
+            return this.nam;
+        }
+        get getSoLuong() {
+            return this.soLuong;
+        }
+        get getTrangThai() {
+            return this.trangThai;
+        }
+        set setMa(ma) {
+            this.ma = ma;
+        }
+        set setTen(ten) {
+            this.ten = ten;
+        }
+        set setNam(nam) {
+            this.nam= nam;
+        }
+        set setSoLuong(soLuong) {
+            this.soLuong = soLuong;
+        }
+        set setTrangThai(trangThai) {
+            this.trangThai = trangThai;
+        }
+
+    }
+    let book = new Book()
+    function addBook() {
+        let arrlist = []
+        book.setMa = prompt("Nhập mã sách");
+        book.setTen = prompt("Nhập tên Sách");
+        book.setNam = Number(prompt("Nhập Năm"));
+        book.setSoLuong = Number(prompt("Nhập số lượng sách"));
+        book.setTrangThai = confirm("Trạng Thái")
+        arrlist.push(book.ma);
+        arrlist.push(book.ten);
+        arrlist.push(book.nam);
+        arrlist.push(book.soLuong);
+        arrlist.push(book.trangThai);
+        listBook.push(arrlist)
+        displayPhone(listBook);
+
+    }
+</script>
+
+</body>
+</html>

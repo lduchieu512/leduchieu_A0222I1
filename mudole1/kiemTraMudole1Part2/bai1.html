@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    do {
+        let n = parseInt(prompt("Nhập số phần tử chứa trong mảng"));
+        if (n<0){
+            alert("Số phần tử âm ");
+        }else if (n<= 50){
+            let arr = [];
+            let tong =0;
+            let count = 0;
+
+            for (let i =0; i< n;i++){
+                arr[i] = parseInt(prompt("Nhập số vào mảng "));
+            }
+            document.write("Array = [ "+arr+"]");
+            for (let j =0; j<arr.length;j++){
+                if (arr[j]%2!=0){
+                    if (j %2==0) {
+                        tong += arr[j];
+                        count++;
+                    }
+                }
+            }
+            let tbc =0;
+            tbc = (tong/count);
+            document.write('<br> Kết quả = '+ tbc )
+            break;
+        }else {
+            alert("Không đc nhập quá 50 phần tử");
+        }
+    }while (true)
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mudole1/ss_17_lap_trinh_huong_doi_tuong_2/bai_tap/objects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mudole1/ss_17_lap_trinh_huong_doi_tuong_2/bai_tap/objects_1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/mudole1/ss_4_git_va_html/thuc_hanh/wf-hello" vcs="Git" />
   </component>
 </project>

@@ -1,56 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        th {
+            border: 1px solid yellow;
+            width: 150px;
+            height: 50px;
+            background-color: goldenrod;
+            color: whitesmoke;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        tbody td {
+            text-align: center;
+            border: 1px solid yellow;
+            width: 150px;
+            height: 50px;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: whitesmoke;
+        }
+        tbody tr:nth-child(even) {
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
+<table id="table" style="display: none">
+    <th>Phone ID</th>
+    <th>Name</th>
+    <th>ManuFacturer</th>
+    <th>Price</th>
+    <tbody id="displayTable"></tbody>
+</table>
+<button onclick="addNew()">Add New Phone</button>
 <script>
-    class Phone{
-        constructor(idPhone,ten,hang,gia) {
-            this.idPhone = idPhone;
-            this.ten = ten;
-            this.hang= hang;
-            this.gia = gia;
+    var managerPhones = new Array();
+    class Phone {
+        constructor(phoneId, name, manufacturer, price) {
+            this.phoneId = phoneId;
+            this.name = name;
+            this.manufacturer = manufacturer;
+            this.price = price;
         }
-        //ID
-        get getIdPhone(){
-            return this.idPhone;
+        getPhoneId() {
+            return this.phoneId;
         }
-        set setIdPhone(id){
-            this.getIdPhone = id;
+        setPhoneId(newId) {
+            this.phoneId = newId;
         }
-        //TEN
-        get getTen(){
-            return this.ten;
+        getName() {
+            return this.name;
         }
-        set setTen(ten){
-            this.ten = ten;
+        setName(newName) {
+            this.name = newName;
         }
-        //
-        get getHang(){
-            return this.hang;
+        getManufacturer() {
+            return this.manuFacturer;
         }
-        set setHang(hang){
-            this.hang = hang;
+        setManufacturer(newManufacturer) {
+            this.manuFacturer = newManufacturer;
         }
-        // Gia
-        get getGia(){
-            return this.gia;
+        getPrice() {
+            return this.price;
         }
-        set setGia(gia){
-            this.gia = gia;
+        setPrice(newPrice) {
+            this.price = newPrice;
         }
-
-
+        toString() {
+            return `ID: ${this.getPhoneId()}
+                Name: ${this.getName()}
+                Manufacturer${this.getManufacturer()}
+                Price: ${this.getPrice()}`;
+        }
     }
-    let Iphone =  new Phone(312,'iphone12','Iphone',23000000);
-    //Iphone.setGia = prompt("thay đổi giá")
-
-
-
-
+    function displayTable() {
+        document.getElementById("displayTable").innerHTML = drawTable(
+            managerPhones.sort((a, b) =>
+                a.getName() !== b.getName() ? a.getName() < b.getName() ? -1: 1: 0)
+        );
+    }
+    function drawTable(phone) {
+        let content = "";
+        for (let i = 0; i < phone.length; i++) {
+            content += `<tr>
+            <td>${phone[i].getPhoneId()}</td>
+            <td>${phone[i].getName()}</td>
+            <td>${phone[i].getManufacturer()}</td>
+            <td>${phone[i].getPrice()} $</td></tr>`;
+        }
+        return content;
+    }
+    function addNew() {
+        let phoneId = prompt('Input ID: ');
+        let name = prompt('NamePhone: '');
+        let manufacturer = prompt(Manufacturer: );
+        let price = prompt(Price: );
+        managerPhones[managerPhones.length] = new Phone(
+            phoneId,
+            name,
+            manufacturer,
+            price
+        );
+        document.getElementById("table").style.display = "block";
+        displayTable();
+    }
 </script>
-
 </body>
 </html>

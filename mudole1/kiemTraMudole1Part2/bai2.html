@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraSoThanThiet(a, b) {
+        let flg = false;
+        let sum = 0;
+        for (let i = 0; i < a; i++) {
+            if (a % i == 0) {
+                sum += i;
+            }
+        }
+        if (sum == b) {
+            flg = true;
+        }
+        return flg;
+    }
+
+    function inputAB() {
+        let a = parseInt(prompt("nhap a"));
+        let b = parseInt(prompt("nhap b"));
+        if (a < 0 || b < 0) {
+            alert("Mot trong hai so khong phai so nguyen duong")
+        } else {
+            let flg = kiemTraSoThanThiet(a, b);
+            document.write(flg)
+        }
+    }
+
+    inputAB();
+
+
+</script>
+</body>
+</html>
