@@ -12,7 +12,8 @@ public class kiem_tra_so_nguyen_to {
         } else {
             int i = 2;
             boolean check = true;
-            while (i < number) {
+            //while (i < number) {\
+            while (i<= Math.sqrt(number)){
                 if (number % i == 0) {
                     check = false;
                     break;
