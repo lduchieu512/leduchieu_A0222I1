@@ -7,7 +7,7 @@ import java.util.TreeMap;
 public class Main {
     public static void main(String[] args) {
         String stTest = "Hello Bro!";
-        TreeMap<Character,Integer> treeMap = new TreeMap<>();
+            TreeMap<Character,Integer> treeMap = new TreeMap<>();
         Arrays.asList(stTest.toUpperCase().split("")).forEach(e->{
             int count =1;
             if (treeMap.containsKey(e.charAt(0))){
