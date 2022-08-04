@@ -260,91 +260,107 @@ select* from instructor;
 select * from instructor_class;
  
 
+-- bài 5: index và view
+explain select * 
+from customers
+where city = 'lyon';
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- bài 4: sử dụng các hàm thông dụng
-
--- đếm số học viên toàn trung tâm
- select count(*) as sl
- from student;
--- 1.1	Hiện thị danh sách các lớp có học viên theo học và số lượng học viên của mỗi lớp
-select c.name as class_name, count(*) as so_luong 
+-- tạo index
+create index i_city on customers(city);
+-- xóa index
+drop index i_city on customers;
+-- tạo index trên cột country
+alter table customers add index i_country(country);
+alter table customers drop index i_country;
+-- tạo view
+create view w_student as
+select s.id,s.name as name_student, s.point,c.id as class_id, c.name as class_name
 from student s
-join class c on s.class_id = c.id
-group by c.id;
--- 1.2.	 Tính điểm lớn nhất của mỗi các lớp
-select c.name as class_name, max(point) as diem_lon_nhat 
-from student s
-join class c on s.class_id = c.id
-group by c.id;
--- 1.3	 Tình điểm trung bình  của từng lớp 
-  select c.name as class_name, avg(point) as diem_lon_nhat 
-from student s
-join class c on s.class_id = c.id
-group by c.id;
- -- 2 Lấy ra toàn bộ tên và ngày sinh các instructor và student ở CodeGym.
-select s.name as ho_va_ten, s.birthday as ngay_sinh
-from student s
-union
-select i.name, i.birthday
-from instructor i;
+join class c 
+on s.class_id = c.id;
+--
+select * 
+from w_student;
+-- stored procedure
 
-  -- 4 Lấy ra 3 học viên có điểm cao nhất của trung tâm.
-select *
-from student s
-order by s.point desc
-limit 3;
+-- tạo một sp_ để lấy danh sách student
+delimiter $$
+create procedure  sp_get_all_student()
+begin
+select * from student;
+end $$
+delimiter ;
 
- -- 5. Lấy ra các học viên có điểm số là cao nhất của trung tâm.
- -- dùng subquery
- select *
- from student s
- where s.point = (select max(s.point)
-from student s);
--- 6 tìm  những gv chưa từng tham gia giảng dạy;
--- dùng join
-select i.name
-from instructor i
-left join instructor_class ic on i.id = ic.instructor_id
-where ic.instructor_id is null;
+call sp_get_all_student();
+-- sp_ có tham số in: lấy ra thông tin của học viên theo id
+delimiter //
+create procedure  sp_find_by_id(in p_id int)
+begin
+select * from student where id =p_id;
+end //
+delimiter ;
+-- gọi sp
+call sp_find_by_id(10);
 
--- dùng truy vấn con với in
-select *
-from instructor i
-where i.id not in (select instructor_id
-from instructor_class 
-group by instructor_id);
+-- đếm số lượng học viên trong bảng student
+delimiter //
+create procedure  count_student(out count int)
+begin
+select count(id) into count from student;
+end //
+delimiter ;
 
--- dùng truy vấn con với exist
-select *
-from instructor i
-where not exists (select *
-from instructor_class ic
-where ic.instructor_id=i.id);
+call count_student(@so_luong);
+select @so_luong;
 
 select * from class_type;
 select* from class;
 select* from jame;
 select * from student;
 select* from instructor;
-select * from instructor_class; 
+select * from instructor_class;
 
+-- Function
+-- tạo function xếp loại dựa trên điểm
+delimiter $$
+create function xep_loai(p_point int)
+returns varchar(50)
+deterministic
+begin
+declare loai varchar(20);
+if p_point>=8 then
+set loai ="giỏi";
+elseif p_point >=7 then
+set loai ="Khá";
+elseif p_point>=5 then
+set loai ="trung binh";
+else 
+set loai ="Yếu";
+end if;
+return loai;
+end $$
+delimiter ;
+-- sử dụng function xep_loai(point)
+select *,xep_loai(point) as xep_loai from student;
+
+-- trigger
+-- 2. Tạo trigger tự động tạo tài khoản jame mới trước khi thêm một sinh viên
+-- + Tài khoản jame được tạo dựa trên username là email và password mặc định "123"
+select* from jame;
+select * from student;
+ insert into student(`name`,birthday, gender,email,`point`, class_id,`account`) 
+ values ('hieu','1981-12-12',1,'hieudeptrai@gmail.com',8,1,'hieudeptrai@gmail.com');
+
+drop trigger auto_create_jame;
+delimiter $$
+create trigger auto_create_jame
+ before insert on student
+for each row
+begin
+insert into jame(`account`,`password`)values(new.email,'123');
+end $$
+delimiter ;
 
 
 
