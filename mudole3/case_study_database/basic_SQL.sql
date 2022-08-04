@@ -266,19 +266,71 @@ having so_lan >= all( select so_luong from hop_dong_chi_tiet  );
 -- Thông tin hiển thị bao gồm ma_hop_dong, ten_loai_dich_vu, ten_dich_vu_di_kem, 
 -- so_lan_su_dung (được tính dựa trên việc count các ma_dich_vu_di_kem).
 select 
-	hd.ma_hop_dong , ldv.ten_loai_dich_vu, dk.ten_dich_vu_di_kem, count(ma_dich_vu_di_kem)
+	hd.ma_hop_dong , ldv.ten_loai_dich_vu, dk.ten_dich_vu_di_kem, 
+    count(ma_dich_vu_di_kem) as so_lan_su_dung
 from 
-	
-
+	loai_dich_vu ldv 
+join 	
+	dich_vu dv using(ma_loai_dich_vu)
+join
+	hop_dong hd using(ma_dich_vu)
+join 	
+	hop_dong_chi_tiet ct using(ma_hop_dong)
+join 
+	dich_vu_di_kem dk using(ma_dich_vu_di_kem)
+ group by 
+	ma_dich_vu_di_kem
+having so_lan_su_dung = 1 
+order by ma_hop_dong ;
 
 -- 15.	Hiển thi thông tin của tất cả nhân viên bao gồm ma_nhan_vien, ho_ten, ten_trinh_do,
 -- ten_bo_phan, so_dien_thoai, dia_chi mới chỉ lập được tối đa 3 hợp đồng từ năm 2020 đến 2021.
+select 
+	nv.ma_nhan_vien, nv.ho_va_ten, td.ten_trinh_do, bp.ten_bo_phan,nv.so_dien_thoai,nv.dia_chi
+     , count(ngay_lam_hop_dong) as so_lan
+from
+	nhan_vien nv
+ join 
+	bo_phan bp using(ma_bo_phan)
+ join 
+	trinh_do td using(ma_trinh_do)
+ join 
+	hop_dong hd using(ma_nhan_vien)
+where 
+	year(ngay_lam_hop_dong) between 2020 and 2021
+group by 
+	ma_nhan_vien
+having so_lan <=3;
 
 -- 16.	Xóa những Nhân viên chưa từng lập được hợp đồng nào từ năm 2019 đến năm 2021.
-
+delete from nhan_vien 
+where ma_nhan_vien not in(
+ select ma_nhan_vien
+ from hop_dong 
+ where year(ngay_lam_hop_dong) between 2019 and 2021
+ group by ma_nhan_vien);
 -- 17.	Cập nhật thông tin những khách hàng có ten_loai_khach từ Platinum lên Diamond, 
 -- chỉ cập nhật những khách hàng đã từng đặt phòng với Tổng Tiền thanh toán trong năm 2021 
 -- là lớn hơn 10.000.000 VNĐ.
+update khach_hang kh
+set kh.ma_loai_khach = 1
+where ma_khach_hang in (select tmp.ma_khach_hang from (select
+	kh.ma_khach_hang,sum(dk.gia * ct.so_luong + dv.chi_phi_thue) as tong_tien
+from khach_hang kh
+join 
+	hop_dong hd using(ma_khach_hang)
+join
+	dich_vu dv using(ma_dich_vu)
+join 
+	hop_dong_chi_tiet ct using(ma_hop_dong)
+join 
+	dich_vu_di_kem dk using(ma_dich_vu_di_kem)
+where 
+	kh.ma_loai_khach =2 and year(hd.ngay_lam_hop_dong) = 2021 
+group by 
+	ma_loai_khach 
+having tong_tien > 10000000 )as tmp);
+;
 
 -- 18.	Xóa những khách hàng có hợp đồng trước năm 2021 (chú ý ràng buộc giữa các bảng).
 
