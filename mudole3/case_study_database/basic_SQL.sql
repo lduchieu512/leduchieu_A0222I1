@@ -333,10 +333,39 @@ having tong_tien > 10000000 )as tmp);
 ;
 
 -- 18.	Xóa những khách hàng có hợp đồng trước năm 2021 (chú ý ràng buộc giữa các bảng).
+DELETE
+FROM
+	khach_hang WHERE NOT EXISTS (
+		SELECT
+			*
+		FROM
+			hop_dong
+		WHERE
+			YEAR(ngay_lam_hop_dong) >= 2021
+			AND hop_dong.ma_khach_hang = khach_hang.ma_khach_hang);
 
 -- 19.	Cập nhật giá cho các dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2020 lên gấp đôi.
-
+update dich_vu_di_kem
+set gia = gia*2
+where  ma_dich_vu_di_kem in (select tmp.ma_dich_vu_di_kem from( 
+select sum(ct.so_luong) as so_lan, hd.ma_hop_dong,dk.ma_dich_vu_di_kem,dk.ten_dich_vu_di_kem
+from hop_dong hd
+join 
+	hop_dong_chi_tiet ct using(ma_hop_dong)
+join	
+	dich_vu_di_kem dk using(ma_dich_vu_di_kem)
+where  year(ngay_lam_hop_dong) = 2020
+group by ma_dich_vu_di_kem
+having  so_lan > 10) tmp);
+	
 -- 20.	Hiển thị thông tin của tất cả các nhân viên và khách hàng có trong hệ thống, 
 -- thông tin hiển thị bao gồm id (ma_nhan_vien, ma_khach_hang), ho_ten, email, so_dien_thoai,
 -- ngay_sinh, dia_chi.
+select  ma_nhan_vien as id,ho_va_ten, email, so_dien_thoai,email,ngay_sinh,dia_chi
+from nhan_vien
+union all
+select  ma_khach_hang as id,ho_va_ten, email, so_dien_thoai,email,ngay_sinh,dia_chi
+from khach_hang
+;
+
 
