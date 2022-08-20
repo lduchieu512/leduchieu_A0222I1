@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e21757a3-0372-4462-b112-6f4fb35201e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../mudole3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/demo/display.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/demo/fix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/demo/sitck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/bai_1/bai_1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/bai_1/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/bai_2/bai_2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/bai_2/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/bai_3/bai_3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/bai_3/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/bai_4/bai_4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/bai_4/bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/demo/A0222I1/A0222I1/.idea/A0222I1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/demo/facebookcss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/demo/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/thuc_hanh/bai_1_su_dung_box_model/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/thuc_hanh/bai_2_tao_menu_doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_thiet_ke_bo_cuc_trang_web/thuc_hanh/bai_3_tao_menu_ngang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_Bootstrap_co_ban/demo/A02/A02/.idea/A02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8_Bootstrap_co_ban/thuc_hanh/thuc_hanh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai3_1/fun_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai3_1/fun_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai3_1/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai3_1/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai3_1/styles_3.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai3_1/styles_3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_1/bai_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_1/bai_1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_1/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_1/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_2/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_2/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_3/fun.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_3/fun.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_3/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_3/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_3/styles3.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/bai_tap/bai_3/styles3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/thuc_hanh/bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_CSS_Cascading_Style_Stylesheet/thuc_hanh/bai1.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2DZgLVpB9uOUcd13mqz93KSu2r2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ss10_JSP_&amp;_JSTL/bai_tap/bai1" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.652" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.652" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.example : bai1-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_bai1_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64618" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : bai1-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e21757a3-0372-4462-b112-6f4fb35201e2" name="Default Changelist" comment="" />
+      <created>1660911964066</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660911964066</updated>
+      <workItem from="1660911966596" duration="1442000" />
+      <workItem from="1660962876695" duration="3543000" />
+      <workItem from="1660966762252" duration="203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1660912088879">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1660912088879" />
+    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1660963543539">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1660963543539" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1660966790497">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1660966790497" />
+    <state width="845" height="141" key="GridCell.Tab.0.bottom" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.0.center" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.0.left" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.0.right" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.1.bottom" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.1.center" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.1.left" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.1.right" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.2.bottom" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.2.center" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.2.left" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="141" key="GridCell.Tab.2.right" timestamp="1660966740487">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="141" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1660966740487" />
+    <state width="845" height="163" key="GridCell.Tab.3.bottom" timestamp="1660964892015">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="163" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1660964892015" />
+    <state width="845" height="163" key="GridCell.Tab.3.center" timestamp="1660964892014">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="163" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1660964892014" />
+    <state width="845" height="163" key="GridCell.Tab.3.left" timestamp="1660964892014">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="163" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1660964892014" />
+    <state width="845" height="163" key="GridCell.Tab.3.right" timestamp="1660964892015">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="163" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1660964892015" />
+    <state x="91" y="0" key="new project wizard" timestamp="1660965802078">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1660965802078" />
+  </component>
+</project>
