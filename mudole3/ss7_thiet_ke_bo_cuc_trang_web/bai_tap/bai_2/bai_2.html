@@ -3,45 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
     <link rel="stylesheet" href="bai_2.css">
 </head>
 <body>
 <header>
-    <div class="header_left">
-        <div class="logo">
-            <a href="bai_2.html"><img  src="data:image/png;base64,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" ></a>
+    <div class="search">
+        <input type="text" placeholder="         Search on facebook">
+    </div>
+    <div class="home">
+        <div>
+
         </div>
-        <div class="search">
-            <div class="icon"></div>
-            <div class="input">
-                <input type="text" placeholder="Search" id="mysearch">
-                <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div class="menu">
+        <div>
+            <img src="https://res.cloudinary.com/locobee-cdn/image/upload/f_auto/v1548641354/doraemon_ghaj08.jpg" alt="">
+            <p>Hieu</p>
+        </div>
+
+        <div>
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+</header>
+<div class="body">
+    <div class="body_menu">
+        <div>
+            <img class="avartar"
+            src="https://res.cloudinary.com/locobee-cdn/image/upload/f_auto/v1548641354/doraemon_ghaj08.jpg" alt="">
+            <p>Le Duc Hieu</p>
+        </div>
+        <div>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/-XF4FQcre_i.png" alt="">
+            <p>Friends</p>
+        </div>
+        <div>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/2uPlV4oORjU.png" alt="">
+            <p>Saved</p>
+        </div>
+        <div>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/mk4dH3FK0jT.png" alt="">
+            <p>Group</p>
+        </div>
+        <div>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/9BDqQflVfXI.png" alt="">
+            <p>Marketplace</p>
+        </div>
+        <div>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/A1HlI2LVo58.png" alt="">
+            <p>Watch</p>
+        </div>
+        <div>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/XEWvxf1LQAG.png" alt="">
+            <p>Game</p>
+        </div>
+        <div>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/AYj2837MmgX.png" alt="">
+            <p>Memory</p>
+        </div>
+        <div>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/9-o1e6LN_TX.png" alt="">
+            <p>Event</p>
+        </div>
+    </div>
+    <div class="body_news">
+
+    </div>
+    <div class="body_message">
+        <div class="box_advertisement">
+            <div class="advertisement">
+                <img src="https://res.cloudinary.com/locobee-cdn/image/upload/f_auto/v1548641354/doraemon_ghaj08.jpg" alt="">
+                <p>instagram.com</p>
+            </div>
+            <div class="advertisement">
+                <img src="https://res.cloudinary.com/locobee-cdn/image/upload/f_auto/v1548641354/doraemon_ghaj08.jpg" alt="">
+                <p>ftmo.com</p>
+            </div>
+        </div>
+        <div class="contact">
+            <div>
+                <img class="avartar"
+                 src="https://res.cloudinary.com/locobee-cdn/image/upload/f_auto/v1548641354/doraemon_ghaj08.jpg" alt="">
+
+                <p>Le Duc Hieu</p>
+            </div>
+            <div>
+                <img class="avartar"
+                 src="https://res.cloudinary.com/locobee-cdn/image/upload/f_auto/v1548641354/doraemon_ghaj08.jpg" alt="">
+
+                <p>Le Duc Hieu</p>
+            </div>
+            <div>
+                <img class="avartar"
+                 src="https://res.cloudinary.com/locobee-cdn/image/upload/f_auto/v1548641354/doraemon_ghaj08.jpg" alt="">
+
+                <p>Le Duc Hieu</p>
+            </div>
+            <div>
+                <img class="avartar"
+                 src="https://res.cloudinary.com/locobee-cdn/image/upload/f_auto/v1548641354/doraemon_ghaj08.jpg" alt="">
+                <p>Le Duc Hieu</p>
+            </div>
+            <div>
+                <img class="avartar"
+                 src="https://res.cloudinary.com/locobee-cdn/image/upload/f_auto/v1548641354/doraemon_ghaj08.jpg" alt="">
+
+                <p>Le Duc Hieu</p>
+            </div>
+            <div>
+                <img class="avartar"
+                 src="https://res.cloudinary.com/locobee-cdn/image/upload/f_auto/v1548641354/doraemon_ghaj08.jpg" alt="">
+                <p>Le Duc Hieu</p>
             </div>
         </div>
     </div>
-    <div class="header_center">
-
-    </div>
-    <div class="header_right">
-
-    </div>
-</header>
-<main>
-    <sidebar class="left"></sidebar>
-
-    <content>
-
-    </content>
-    <sidebar class="right"></sidebar>
-
-</main>
+</div>
 </body>
-<script>
-    const  icon = document.querySelector('.icon');
-    const  search = document.querySelector('.search');
-    icon.onclick = function () {
-        search.classList.toggle('active')
-    }
-</script>
 </html>

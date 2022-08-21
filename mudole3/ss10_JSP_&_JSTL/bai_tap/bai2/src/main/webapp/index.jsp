@@ -9,8 +9,50 @@
 <html>
   <head>
     <title>$Title$</title>
+    <style>
+      th{
+        text-align: left;
+      }
+      select{
+        width: 100%;
+        text-align: center;
+      }
+
+    </style>
   </head>
+
   <body>
-  $END$
+  <h1>Simple Calculator</h1>
+  <form action="/Calculator" method="post">
+      <fieldset>
+        <legend>
+          Calculator
+        </legend>
+        <table>
+          <tr>
+            <th>First operand: </th>
+            <th><input type="text" name="First" ></th>
+          </tr>
+          <tr>
+            <th>Operator: </th>
+            <th><select name="Operator">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+          </select></th>
+          </tr>
+          <tr>
+            <th>Second operand: </th>
+            <th><input type="text" name="Second" ></th>
+          </tr>
+          <tr>
+            <th> </th>
+            <th><button>calculate </button></th>
+          </tr>
+
+        </table>
+      </fieldset>
+  </form>
   </body>
 </html>
