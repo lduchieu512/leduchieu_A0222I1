@@ -3,7 +3,7 @@ package model;
 public class Student {
     private int id;
     private String name;
-    private boolean gender;
+    private String gender;
     private String birthday;
     private int point;
     private String account;
@@ -13,7 +13,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(int id, String name, boolean gender, String birthday, int point, String account, int classId, String email) {
+    public Student(int id, String name, String gender, String birthday, int point, String account, int classId, String email) {
         this.id = id;
         this.name = name;
         this.gender = gender;
@@ -38,14 +38,6 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public boolean isGender() {
-        return gender;
-    }
-
-    public void setGender(boolean gender) {
-        this.gender = gender;
     }
 
     public String getBirthday() {
@@ -86,6 +78,14 @@ public class Student {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }
 

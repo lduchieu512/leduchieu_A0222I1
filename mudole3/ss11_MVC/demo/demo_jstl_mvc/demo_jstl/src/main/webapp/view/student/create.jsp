@@ -20,7 +20,7 @@
 <form action="/student?action=create" method="post">
     <pre>ID:       <input type="text" name="id"/></pre>
     <pre>Name:     <input type="text" name="name"> </pre>
-    <pre>Gender :  <input type="radio" name="gender">Nam <input type="radio" name="gender"> Nữ </pre>
+    <pre>Gender :  <input type="radio" name="gender" value="Nam">Nam <input type="radio" name="gender" value="Nữ"> Nữ </pre>
     <pre>Birthday: <input type="date" name="birthday"> </pre>
     <pre>Point:    <input type="number" name="point"> </pre>
     <pre>Account:  <input type="text" name="account"> </pre>

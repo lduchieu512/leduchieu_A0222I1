@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1323dd3b-0278-4ef1-8930-fdf762381806" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../bai_thi_cu/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_thi_cu/src/main/java/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_thi_cu/src/main/java/repository/IProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_thi_cu/src/main/java/repository/Impl/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_thi_cu/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_thi_cu/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_thi_cu/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_MVC/bai_tap/bai1/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_MVC/bai_tap/bai1/src/main/java/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_MVC/bai_tap/bai1/src/main/java/service/Impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_MVC/bai_tap/bai1/src/main/java/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_MVC/bai_tap/bai1/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_MVC/bai_tap/bai1/src/main/webapp/product/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_MVC/bai_tap/bai1/src/main/webapp/product/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_MVC/bai_tap/bai1/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/bai_tap/src/main/java/controller/Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/bai_tap/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/bai_tap/src/main/java/repository/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/bai_tap/src/main/java/repository/Impl/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/bai_tap/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/bai_tap/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/bai_tap/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/bai_tap/src/main/webapp/view/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/thuc_hanh/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/thuc_hanh/src/main/java/dao/IUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/thuc_hanh/src/main/java/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/thuc_hanh/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/thuc_hanh/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/thuc_hanh/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss12_JDBC_&amp;_CRUD/thuc_hanh/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/src/main/java/controller/Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/src/main/java/repository/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/src/main/java/repository/impl/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai1/src/main/webapp/view/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai2/src/main/java/controller/Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai2/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai2/src/main/java/repository/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai2/src/main/java/repository/impl/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai2/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai2/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai2/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai2/src/main/webapp/view/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai3/src/main/java/controller/Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai3/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai3/src/main/java/repository/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai3/src/main/java/repository/impl/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai3/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai3/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai3/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai3/src/main/webapp/view/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.65 (1)/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.65 (1)/apache-tomcat-9.0.65/webapps/ROOT/WEB-INF/classes/CalculatorServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.65 (1)/apache-tomcat-9.0.65/webapps/ROOT/calculate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.65 (1)/apache-tomcat-9.0.65/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.65 (1)/apache-tomcat-9.0.65/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/build/classes/java/main/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/build/classes/java/main/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/build/classes/java/main/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/build/classes/java/main/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/build/classes/java/main/repository/impl/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/build/classes/java/main/repository/impl/StudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/build/classes/java/main/service/impl/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/build/classes/java/main/service/impl/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/build/libs/demo_jstl-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/build/libs/demo_jstl-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/src/main/java/controller/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/src/main/java/controller/StudentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/src/main/java/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/src/main/java/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/src/main/java/repository/impl/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/src/main/java/repository/impl/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/src/main/webapp/view/student/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/src/main/webapp/view/student/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/src/main/webapp/view/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC/demo/demo_jstl_mvc/demo_jstl/src/main/webapp/view/student/list.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2EQsVq78HGqKncAV8qa4Q4wHr5n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thuc_hanh/ss13_th_bai4" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1323dd3b-0278-4ef1-8930-fdf762381806" name="Default Changelist" comment="" />
+      <created>1662539168790</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662539168790</updated>
+      <workItem from="1662539172004" duration="64000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1662539234680">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1662539234680" />
+    <state x="91" y="0" key="new project wizard" timestamp="1662539180294">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1662539180294" />
+  </component>
+</project>
